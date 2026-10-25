@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 6 站 · 检查一下：你真的懂了吗 | IT4IT 入门</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-step="quiz">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">4</span>
+    <span class="brand-text">IT4IT 入门<small>IT 价值链 · 交互式小课</small></span>
+  </a>
+  <nav class="stepper" id="stepper" aria-label="学习步骤"></nav>
+  <div class="topbar-meta">
+    <div class="mini-progress"><i data-progress-bar></i></div>
+    <span data-progress-text>0 / 7 站</span>
+  </div>
+</header>
+
+<main class="page page--narrow">
+
+  <div class="trail reveal">
+    <span>第 6 站 / 7</span>
+    <span class="bar"><i data-progress-bar></i></span>
+    <span data-progress-pct>0%</span>
+  </div>
+
+  <section class="hero reveal">
+    <p class="kicker"><span class="dot"></span> 自测 · 8 题</p>
+    <h1>检查一下：<br>你真的懂了吗？</h1>
+    <p class="lead" style="margin-top:12px">选中即判分，每题都有解析。答错不是坏事——它会告诉你该回哪一站。</p>
+  </section>
+
+  <section class="section">
+    <div class="quiz-top reveal" style="margin-bottom:16px">
+      <div class="quiz-progress"><i id="quiz-bar"></i></div>
+      <span class="chip" id="quiz-count">0 / 8</span>
+    </div>
+
+    <div id="quiz">
+
+      <!-- Q1 -->
+      <div class="card q reveal" data-answer="b"
+        data-explain-ok="对。官方 FAQ 说得很清楚：IT4IT 不是一个流程模型，而是基于 IT 价值链概念的信息模型 + 参考架构。"
+        data-explain-no="正确答案是 B。IT4IT 由 The Open Group 发布，本质是<b>数据驱动的参考架构</b>；官方明确说它不是流程模型。回看 <a href=&quot;2-value-chain.html&quot;>第 2 站</a>。">
+        <div class="qn">QUESTION 01</div>
+        <h3>用一句话描述 IT4IT，下面哪个最准确？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>一套 IT 服务管理流程，可以理解为 ITIL 的升级版</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>The Open Group 发布的数据驱动参考架构，用价值流描述 IT 如何创造价值</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>一款可以采购部署的 IT 运维管理产品</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>一种取代敏捷的开发方法论</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="card q reveal" data-answer="b"
+        data-explain-ok="对。R2D（Requirement to Deploy）就是“需求到部署”，负责把确定要做的东西设计、开发、测试、部署出来。"
+        data-explain-no="正确答案是 B。R2D = Requirement to Deploy，需求到部署。回看 <a href=&quot;3-value-streams.html&quot;>第 3 站</a>。">
+        <div class="qn">QUESTION 02</div>
+        <h3>四条价值流里，哪一条负责“把确定要做的东西造出来并部署上线”？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>S2P · Strategy to Portfolio</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>R2D · Requirement to Deploy</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>R2F · Request to Fulfill</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>D2C · Detect to Correct</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="card q reveal" data-answer="c"
+        data-explain-ok="对。自助申请、审批、开通、计费属于 R2F（请求到履约），它把 IT 变成“服务经纪商”。"
+        data-explain-no="正确答案是 C。R2F 管服务目录、订阅、履约、计费。回看 <a href=&quot;3-value-streams.html&quot;>第 3 站</a>。">
+        <div class="qn">QUESTION 03</div>
+        <h3>新员工在服务门户里自助申请“标准笔记本 + 邮箱 + VPN”，三天内配齐，月底自动分摊到部门。这主要发生在哪条价值流？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>S2P</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>R2D</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>R2F</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>D2C</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="card q reveal" data-answer="a"
+        data-explain-ok="对。D2C 的顺序是 Detect（发现）→ Diagnose（诊断）→ Change（变更）→ Resolve（恢复）。"
+        data-explain-no="正确答案是 A。记住这条链：发现偏差 → 定位根因 → 受控修复 → 恢复承诺。回看 <a href=&quot;3-value-streams.html&quot;>第 3 站</a>。">
+        <div class="qn">QUESTION 04</div>
+        <h3>D2C 的四个典型阶段，正确顺序是？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>Detect → Diagnose → Change → Resolve</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>Detect → Change → Diagnose → Resolve</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>Diagnose → Detect → Resolve → Change</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>Change → Detect → Diagnose → Resolve</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="card q reveal" data-answer="b"
+        data-explain-ok="对。功能组件是逻辑能力分组（比如“服务监控”），具体由哪家工具实现是自由的。这正是 IT4IT 能长期稳定的原因。"
+        data-explain-no="正确答案是 B。组件是能力说明书，工具是具体实现。回看 <a href=&quot;2-value-chain.html&quot;>第 2 站</a>。">
+        <div class="qn">QUESTION 05</div>
+        <h3>关于“功能组件（Functional Component）”，哪种说法是对的？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>一个功能组件必须由一个特定厂商的产品来实现</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>功能组件是逻辑能力分组，可以由不同工具、甚至人工流程实现</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>功能组件就是微服务，一个组件对应一个服务</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>功能组件就是 IT 部门内部的科室名称</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="card q reveal" data-answer="b"
+        data-explain-ok="对。官方原话：IT4IT 不是流程模型，但与流程模型互补，是让 ITIL 这类最佳实践得以运行的地基。"
+        data-explain-no="正确答案是 B。两者互补，不是替代。回看 <a href=&quot;5-relations.html&quot;>第 5 站</a>。">
+        <div class="qn">QUESTION 06</div>
+        <h3>IT4IT 与 ITIL 的关系，官方口径是什么？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>IT4IT 会取代 ITIL</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>互补：ITIL 提供流程最佳实践，IT4IT 提供信息模型与架构地基</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>两者毫无关系，只是名字相似</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>IT4IT 就是 ITIL 的第 5 版</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q7 多选 -->
+      <div class="card q reveal" data-answer="a,b,c,e"
+        data-explain-ok="对。价值流、功能组件、服务生命周期数据对象、服务主干数据对象、关系，是 IT4IT Level 1 的五个核心概念。"
+        data-explain-no="正确答案是 A、B、C、E。“故事点”是敏捷估算单位，不属于 IT4IT 的核心概念。回看 <a href=&quot;4-data-model.html&quot;>第 4 站</a>。">
+        <div class="qn">QUESTION 07 · 多选</div>
+        <h3>下列哪些属于 IT4IT Level 1 的核心概念？（可多选）</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>价值流（Value Stream）</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>功能组件（Functional Component）</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>服务主干数据对象（Service Model Backbone Data Object）</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>故事点（Story Point）</span></button>
+          <button class="opt" data-key="e"><span class="k">E</span><span>关系（Relationship）</span></button>
+        </div>
+        <div class="btn-row" style="margin-top:12px"><button class="btn btn-sm btn-primary js-submit" disabled>提交答案</button></div>
+        <div class="feedback"></div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="card q reveal" data-answer="b"
+        data-explain-ok="对。v3.0（2022）引入数字产品（Digital Product）与数字产品主干，并把价值流重组为 7 条，但内核仍是价值流 + 组件 + 数据对象。"
+        data-explain-no="正确答案是 B。v3.0 引入 Digital Product 与 Digital Product Backbone，并把价值流重组为 7 条。回看 <a href=&quot;3-value-streams.html&quot;>第 3 站</a> 的版本提示。">
+        <div class="qn">QUESTION 08</div>
+        <h3>关于 IT4IT 的版本演进，哪个说法正确？</h3>
+        <div class="opts">
+          <button class="opt" data-key="a"><span class="k">A</span><span>IT4IT 只有 v2.0 一个版本，之后没有再更新</span></button>
+          <button class="opt" data-key="b"><span class="k">B</span><span>v3.0 引入数字产品与数字产品主干，并把价值流重组为 7 条</span></button>
+          <button class="opt" data-key="c"><span class="k">C</span><span>v3.0 取消了数据模型，只保留流程图</span></button>
+          <button class="opt" data-key="d"><span class="k">D</span><span>v3.0 已经改名并并入 ITIL 5</span></button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+    </div>
+
+    <div id="quiz-result" style="margin-top:20px"></div>
+  </section>
+
+</main>
+
+<footer class="page-footer page-footer--narrow">
+  <span class="hint">第 6 站 · 自测</span>
+  <div class="nav-links" id="footer-nav"></div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 1 站 · IT 自己的“部门墙” | IT4IT 入门</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-step="silos" data-mode="pain">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">4</span>
+    <span class="brand-text">IT4IT 入门<small>IT 价值链 · 交互式小课</small></span>
+  </a>
+  <nav class="stepper" id="stepper" aria-label="学习步骤"></nav>
+  <div class="topbar-meta">
+    <div class="mini-progress"><i data-progress-bar></i></div>
+    <span data-progress-text>0 / 7 站</span>
+  </div>
+</header>
+
+<main class="page">
+
+  <div class="trail reveal">
+    <span>第 1 站 / 7</span>
+    <span class="bar"><i data-progress-bar></i></span>
+    <span data-progress-pct>0%</span>
+  </div>
+
+  <section class="hero">
+    <p class="kicker reveal"><span class="dot"></span> 问题</p>
+    <h1 class="reveal">IT 内部，<br>为什么也有一堵“部门墙”？</h1>
+    <p class="lead reveal" style="max-width:680px">
+      公司里唯一一个“给自己造工具、又给自己修工具”的部门，就是 IT。
+      于是 IT 的工作被切成了很多段：需求在需求系统里，设计在文档里，代码在仓库里，
+      配置在 CMDB 里，故障在工单里……每一段都有自己的系统，也有自己的“真相”。
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="card card--pad reveal">
+      <div class="chip" style="margin-bottom:10px">一个真实场景</div>
+      <h3 style="margin-bottom:8px">市场部提了一个需求：“让客户能自助修改收货地址”</h3>
+      <p class="small" style="margin:0">
+        这个需求在 IT 内部要走完 8 个环节：需求评审 → 项目排期 → 架构设计 → 开发 →
+        测试 → 发布 → 配置登记 → 上线后监控。每一环看起来都很专业，
+        但把它们连起来看，你会发现——<b>没有一个人能说清它此刻到底在哪儿</b>。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">点一下，对比两种组织方式</h2>
+    <p class="muted small reveal" style="margin:6px 0 16px">左边是大多数 IT 组织的现状，右边是 IT4IT 想给你的样子。</p>
+
+    <div class="silo-stage reveal">
+      <div class="btn-row" style="margin-bottom:14px">
+        <button class="btn btn-sm btn-ghost" id="mode-pain" style="border-color:#f0b9b9;color:#b91c1c;background:#fff5f5">😵 现状：工具竖井</button>
+        <button class="btn btn-sm btn-ghost" id="mode-it4it">🙂 IT4IT：一条数据主线</button>
+      </div>
+
+      <svg viewBox="0 0 900 470" role="img" aria-label="工具竖井与 IT4IT 数据主线对比图">
+        <defs>
+          <linearGradient id="busGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#eef0ff"/>
+            <stop offset="1" stop-color="#e6e3ff"/>
+          </linearGradient>
+        </defs>
+
+        <!-- 混乱的点对点连线 -->
+        <g class="spaghetti">
+          <path class="bad" d="M140 96 C 240 190, 420 250, 505 364"/>
+          <path class="bad" d="M360 96 C 420 180, 300 280, 215 364"/>
+          <path class="bad" d="M580 96 C 640 170, 470 270, 505 364"/>
+          <path class="bad" d="M800 96 C 820 180, 660 250, 725 364"/>
+          <path class="bad" d="M140 96 C 300 140, 320 300, 215 364"/>
+          <path d="M360 96 C 560 150, 700 250, 725 364"/>
+          <path d="M580 96 C 520 150, 560 260, 505 364"/>
+          <path d="M140 96 C 420 60, 640 60, 800 96"/>
+          <path d="M140 364 C 300 430, 560 430, 800 96"/>
+          <path d="M215 96 C 260 200, 690 300, 640 364"/>
+          <path d="M300 364 C 330 250, 470 200, 505 96"/>
+          <path d="M640 96 C 600 200, 380 280, 300 364"/>
+          <path class="bad" d="M800 364 C 700 300, 500 210, 360 96"/>
+          <path d="M580 364 C 620 280, 700 200, 725 96"/>
+        </g>
+
+        <text class="dup-badge" x="450" y="196" text-anchor="middle">同一个需求，存了 4 份；改了 3 次，只有 1 份是最新的</text>
+        <text class="dup-badge" x="450" y="216" text-anchor="middle" style="fill:#94a3b8;font-weight:600">10 个系统之间，理论上最多有 45 条点对点接口</text>
+
+        <!-- IT4IT 总线 -->
+        <g class="bus-group">
+          <rect x="110" y="200" width="680" height="66" rx="16" fill="url(#busGrad)" stroke="#c9c6f8" stroke-width="1.4"/>
+          <text x="450" y="228" text-anchor="middle" style="font-size:15px;fill:#4338ca;font-weight:800">统一数据模型 · 服务生命周期数据</text>
+          <text x="450" y="249" text-anchor="middle" style="font-size:11.5px;fill:#6d68c9;font-weight:500">需求 · 设计 · 发布 · 配置 · 事件 —— 一份数据，多处引用</text>
+
+          <line class="bus-line" x1="140" y1="96" x2="140" y2="200"/>
+          <line class="bus-line" x1="360" y1="96" x2="360" y2="200"/>
+          <line class="bus-line" x1="580" y1="96" x2="580" y2="200"/>
+          <line class="bus-line" x1="800" y1="96" x2="800" y2="200"/>
+          <line class="bus-line" x1="140" y1="266" x2="140" y2="364"/>
+          <line class="bus-line" x1="360" y1="266" x2="360" y2="364"/>
+          <line class="bus-line" x1="580" y1="266" x2="580" y2="364"/>
+          <line class="bus-line" x1="800" y1="266" x2="800" y2="364"/>
+        </g>
+
+        <!-- 八个节点 -->
+        <g class="node">
+          <rect x="65" y="40" width="150" height="56" rx="12"/>
+          <text x="140" y="64" text-anchor="middle">需求管理</text>
+          <text class="node-sub" x="140" y="81" text-anchor="middle">Jira / 需求池</text>
+        </g>
+        <g class="node">
+          <rect x="285" y="40" width="150" height="56" rx="12"/>
+          <text x="360" y="64" text-anchor="middle">项目与排期</text>
+          <text class="node-sub" x="360" y="81" text-anchor="middle">Excel / 项目管理</text>
+        </g>
+        <g class="node">
+          <rect x="505" y="40" width="150" height="56" rx="12"/>
+          <text x="580" y="64" text-anchor="middle">架构与设计</text>
+          <text class="node-sub" x="580" y="81" text-anchor="middle">Wiki / 文档库</text>
+        </g>
+        <g class="node">
+          <rect x="725" y="40" width="150" height="56" rx="12"/>
+          <text x="800" y="64" text-anchor="middle">代码与构建</text>
+          <text class="node-sub" x="800" y="81" text-anchor="middle">Git / CI</text>
+        </g>
+
+        <g class="node">
+          <rect x="65" y="364" width="150" height="56" rx="12"/>
+          <text x="140" y="388" text-anchor="middle">发布与变更</text>
+          <text class="node-sub" x="140" y="405" text-anchor="middle">发布单 / 变更单</text>
+        </g>
+        <g class="node">
+          <rect x="285" y="364" width="150" height="56" rx="12"/>
+          <text x="360" y="388" text-anchor="middle">配置管理</text>
+          <text class="node-sub" x="360" y="405" text-anchor="middle">CMDB</text>
+        </g>
+        <g class="node">
+          <rect x="505" y="364" width="150" height="56" rx="12"/>
+          <text x="580" y="388" text-anchor="middle">监控告警</text>
+          <text class="node-sub" x="580" y="405" text-anchor="middle">监控平台</text>
+        </g>
+        <g class="node">
+          <rect x="725" y="364" width="150" height="56" rx="12"/>
+          <text x="800" y="388" text-anchor="middle">服务台</text>
+          <text class="node-sub" x="800" y="405" text-anchor="middle">工单系统</text>
+        </g>
+      </svg>
+
+      <div class="silo-legend">
+        <span><i style="background:#d99a9a"></i>容易断、容易重复的接口</span>
+        <span><i style="background:#c9cede"></i>一般的点对点集成</span>
+        <span><i style="background:#a7a2f5"></i>IT4IT 的统一数据主线</span>
+      </div>
+    </div>
+
+    <p class="small muted reveal" style="margin-top:12px">
+      注：接口数量按“两两互联”估算，n 个系统最坏情况需要 n(n−1)/2 条接口；10 个系统就是 45 条。
+      实际组织通常不会全连，但“该连的连不上、连上的没人维护”是常态。
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">这种“竖井”到底贵在哪？</h2>
+    <div class="grid-3 reveal" style="margin-top:16px">
+      <div class="card card--pad card-hover">
+        <div class="stat" style="border:0;padding:0;background:none">
+          <b style="font-size:20px">重复录入</b>
+          <span>同一条信息被不同工具各存一份，改一处、漏三处。数据一致性靠人肉对表。</span>
+        </div>
+      </div>
+      <div class="card card--pad card-hover">
+        <div class="stat" style="border:0;padding:0;background:none">
+          <b style="font-size:20px">端到端不可见</b>
+          <span>老板问“这个需求卡在哪”，没人能在 5 分钟内答出来，因为答案散在 8 个系统里。</span>
+        </div>
+      </div>
+      <div class="card card--pad card-hover">
+        <div class="stat" style="border:0;padding:0;background:none">
+          <b style="font-size:20px">价值无法度量</b>
+          <span>每条价值流花了多少钱、交付了多少价值，账算不到一起，预算只能按部门拍脑袋。</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="callout callout--warn reveal">
+      <div class="ico">!</div>
+      <div>
+        <p><strong>常见的错误解法：再买一个“大一统平台”。</strong>结果往往是多了一个要集成的系统——原来的 45 条接口变成了 55 条。
+        IT4IT 的判断是：问题不在工具数量，而在<strong>缺少一个公认的“信息骨架”</strong>，让大家知道“一条需求、一次发布、一个服务”在架构上应该长什么样、由谁交给谁。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card card--pad card--lift reveal" style="border-color:#dedbfb;background:linear-gradient(180deg,#faf9ff,#fff)">
+      <div class="chip chip--brand" style="margin-bottom:10px">下一站预告</div>
+      <h3 style="margin-bottom:6px">所以 IT4IT 的第一步，不是买工具，而是先“画出 IT 自己的价值链”。</h3>
+      <p class="small" style="margin:0 0 16px">下一站，我们看看这条价值链由哪三层组成，以及为什么它能把 45 条乱线变成一条主线。</p>
+      <a class="btn btn-primary" href="2-value-chain.html">进入第 2 站：一条属于 IT 的价值链 →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <span class="hint">第 1 站 · 问题</span>
+  <div class="nav-links" id="footer-nav"></div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+  (function () {
+    var pain = document.getElementById("mode-pain");
+    var good = document.getElementById("mode-it4it");
+    function set(mode) {
+      document.body.setAttribute("data-mode", mode);
+      var isPain = mode === "pain";
+      pain.style.borderColor = isPain ? "#f0b9b9" : "";
+      pain.style.background = isPain ? "#fff5f5" : "";
+      pain.style.color = isPain ? "#b91c1c" : "";
+      good.style.borderColor = isPain ? "" : "#bfe4d5";
+      good.style.background = isPain ? "" : "#f2fdf8";
+      good.style.color = isPain ? "" : "#067a55";
+    }
+    pain.addEventListener("click", function () { set("pain"); });
+    good.addEventListener("click", function () { set("it4it"); });
+    if (new URLSearchParams(location.search).get("mode") === "it4it") set("it4it");
+  })();
+</script>
+</body>
+</html>

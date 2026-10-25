@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 3 站 · 四条价值流 | IT4IT 入门</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-step="streams">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">4</span>
+    <span class="brand-text">IT4IT 入门<small>IT 价值链 · 交互式小课</small></span>
+  </a>
+  <nav class="stepper" id="stepper" aria-label="学习步骤"></nav>
+  <div class="topbar-meta">
+    <div class="mini-progress"><i data-progress-bar></i></div>
+    <span data-progress-text>0 / 7 站</span>
+  </div>
+</header>
+
+<main class="page">
+
+  <div class="trail reveal">
+    <span>第 3 站 / 7</span>
+    <span class="bar"><i data-progress-bar></i></span>
+    <span data-progress-pct>0%</span>
+  </div>
+
+  <section class="hero">
+    <p class="kicker reveal"><span class="dot"></span> 核心 · 四个关键词</p>
+    <h1 class="reveal">四条价值流，<br>就是 IT 的<span class="grad-text">四条生命线</span></h1>
+    <p class="lead reveal" style="max-width:720px">
+      记住这四个缩写，你就能听懂 80% 的 IT4IT 对话。它们对应的是 IT 传统上说的
+      <b>Plan / Build / Deliver / Run</b>，但被重新定义成了四条<b>端到端、可度量、有明确交接物</b>的价值流。
+      点开每一条，看它从哪里开始、到哪里结束。
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">先看一眼全景</h2>
+    <div class="card card--pad reveal" style="margin-top:14px">
+      <div class="grid-4" style="display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+        <div style="padding:14px;border-radius:12px;background:var(--s2p-soft);border:1px solid #e6d8ff">
+          <b style="color:var(--s2p);font-size:13px">S2P · 战略到组合</b>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#4c1d95">决定该投什么</p>
+        </div>
+        <div style="padding:14px;border-radius:12px;background:var(--r2d-soft);border:1px solid #d5e4ff">
+          <b style="color:var(--r2d);font-size:13px">R2D · 需求到部署</b>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#1e3a8a">把它造出来</p>
+        </div>
+        <div style="padding:14px;border-radius:12px;background:var(--r2f-soft);border:1px solid #ccefe4">
+          <b style="color:var(--r2f);font-size:13px">R2F · 请求到履约</b>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#064e3b">让员工用上它</p>
+        </div>
+        <div style="padding:14px;border-radius:12px;background:var(--d2c-soft);border:1px solid #f6e2c2">
+          <b style="color:var(--d2c);font-size:13px">D2C · 发现到纠正</b>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#78350f">保证它一直好用</p>
+        </div>
+      </div>
+      <p class="small muted" style="margin:14px 0 0">
+        四条价值流首尾相接成一个环，不是单向流水线：D2C 发现的问题，会回流成 S2P 的投资输入或 R2D 的新需求。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal" style="margin-bottom:10px">一条一条看</h2>
+    <div class="vs-tabs reveal" role="tablist">
+      <button class="vs-tab is-active" data-vs="s2p"><b>S2P</b><span>战略到组合</span></button>
+      <button class="vs-tab" data-vs="r2d"><b>R2D</b><span>需求到部署</span></button>
+      <button class="vs-tab" data-vs="r2f"><b>R2F</b><span>请求到履约</span></button>
+      <button class="vs-tab" data-vs="d2c"><b>D2C</b><span>发现到纠正</span></button>
+    </div>
+
+    <!-- ================= S2P ================= -->
+    <div class="vs-panel is-active" data-vs="s2p" style="--vs-color:var(--s2p);--vs-soft:var(--s2p-soft);margin-top:14px">
+      <div class="card card--pad">
+        <div class="vs-head">
+          <span class="chip chip--s2p">S2P</span>
+          <h2>Strategy to Portfolio</h2>
+        </div>
+        <p class="vs-purpose">让 IT 的投资组合，跟着业务战略走 —— 决定“我们该投什么、不投什么”。</p>
+        <p style="margin-top:10px">
+          这一段最容易被忽略：大家总觉得 IT 的价值是从“写代码”开始的。但方向错了，后面全白干。
+          S2P 要把业务战略翻译成 IT 的服务组合与投资决策，并且<b>主动砍掉</b>不该继续投的东西。
+        </p>
+
+        <div class="stage-flow">
+          <button class="stage" data-detail='<b>Strategy · 战略</b><ul><li>把业务目标翻译成 IT 的方向、预算与约束</li><li>参与：CIO、企业架构、业务负责人</li><li>产出：IT 战略与投资原则</li></ul>'>
+            <span class="sn">STAGE 1</span><span class="st">Strategy</span><span class="sd">战略</span></button>
+          <button class="stage" data-detail='<b>Service Portfolio · 服务组合</b><ul><li>盘清现有的服务：哪些留着、哪些改造、哪些下线</li><li>形成服务组合的全局视图，而不是一堆项目清单</li><li>产出：服务目录的战略层视图</li></ul>'>
+            <span class="sn">STAGE 2</span><span class="st">Service Portfolio</span><span class="sd">服务组合</span></button>
+          <button class="stage" data-detail='<b>Demand · 需求与机会</b><ul><li>收集业务诉求、技术机会、合规要求</li><li>先归并成“需求池”，而不是一个需求开一个项目</li><li>产出：结构化的组合需求</li></ul>'>
+            <span class="sn">STAGE 3</span><span class="st">Demand</span><span class="sd">需求</span></button>
+          <button class="stage" data-detail='<b>Selection · 选型立项</b><ul><li>按价值、成本、风险做取舍，形成提案</li><li>决定“做 / 不做 / 外购 / 暂缓”</li><li>产出：提案（Proposal），进入 R2D</li></ul>'>
+            <span class="sn">STAGE 4</span><span class="st">Selection</span><span class="sd">选型</span></button>
+        </div>
+        <div class="stage-detail"></div>
+
+        <div class="meta-grid">
+          <div class="meta-box">
+            <h4>关键功能组件</h4>
+            <p>企业架构（Enterprise Architecture）、政策管理（Policy）、提案（Proposal）、组合需求（Portfolio Demand）、服务组合（Service Portfolio）</p>
+          </div>
+          <div class="meta-box">
+            <h4>产出 / 交接的数据对象</h4>
+            <p><b>数字服务（Digital Service）</b>：一个“值得投资”的服务定义，带着概念设计交给 R2D。</p>
+          </div>
+          <div class="meta-box">
+            <h4>一句话场景</h4>
+            <p>业务想上 AI 客服，但队列里还有 30 个项目。S2P 负责回答：为什么是它、预算从哪来、哪个老服务该退场。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= R2D ================= -->
+    <div class="vs-panel" data-vs="r2d" style="--vs-color:var(--r2d);--vs-soft:var(--r2d-soft);margin-top:14px">
+      <div class="card card--pad">
+        <div class="vs-head">
+          <span class="chip chip--r2d">R2D</span>
+          <h2>Requirement to Deploy</h2>
+        </div>
+        <p class="vs-purpose">把“值得做”变成“能部署” —— 交付一个可上线、可回滚的服务版本。</p>
+        <p style="margin-top:10px">
+          这是大多数人最熟悉的一段：设计、开发、测试、发布。IT4IT 的贡献不是发明新流程，而是明确
+          <b>这一段结束时必须交出什么</b>——不是“上线了”，而是一个有版本、有配置、可追溯的
+          <b>服务发布（Service Release）</b>。
+        </p>
+
+        <div class="stage-flow">
+          <button class="stage" data-detail='<b>Plan &amp; Design · 规划与设计</b><ul><li>把需求拆成服务设计：架构、接口、容量、非功能要求</li><li>决定是自建、外购还是复用现有服务</li><li>产出：服务设计与服务需求</li></ul>'>
+            <span class="sn">STAGE 1</span><span class="st">Plan &amp; Design</span><span class="sd">规划与设计</span></button>
+          <button class="stage" data-detail='<b>Develop · 开发</b><ul><li>编码、配置、集成，形成可构建的组件</li><li>敏捷、瀑布、低代码都行——IT4IT 对方法中立</li><li>产出：构建包与源代码变更</li></ul>'>
+            <span class="sn">STAGE 2</span><span class="st">Develop</span><span class="sd">开发</span></button>
+          <button class="stage" data-detail='<b>Test · 测试</b><ul><li>验证功能与非功能要求，缺陷闭环</li><li>把“测试通过”变成可被下游信任的证据</li><li>产出：测试结果与缺陷记录</li></ul>'>
+            <span class="sn">STAGE 3</span><span class="st">Test</span><span class="sd">测试</span></button>
+          <button class="stage" data-detail='<b>Deploy · 部署</b><ul><li>组装发布（Release Composition），部署到目标环境</li><li>登记配置项，进入可运维状态</li><li>产出：<b>服务发布（Service Release）</b></li></ul>'>
+            <span class="sn">STAGE 4</span><span class="st">Deploy</span><span class="sd">部署</span></button>
+        </div>
+        <div class="stage-detail"></div>
+
+        <div class="meta-grid">
+          <div class="meta-box">
+            <h4>关键功能组件</h4>
+            <p>项目（Project）、需求（Requirement）、服务设计（Service Design）、源码控制（Source Control）、构建（Build）、构建包、发布组装（Release Composition）、测试（Test）、缺陷（Defect）</p>
+          </div>
+          <div class="meta-box">
+            <h4>产出 / 交接的数据对象</h4>
+            <p><b>服务发布（Service Release）</b>与<b>服务系统（Service System）</b>：交给 R2F 变成可订阅的商品，交给 D2C 变成要监控的对象。</p>
+          </div>
+          <div class="meta-box">
+            <h4>一句话场景</h4>
+            <p>“客户自助改地址”这个需求，从设计到灰度上线，最后交付的不是一个 URL，而是一个带版本的发布包。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= R2F ================= -->
+    <div class="vs-panel" data-vs="r2f" style="--vs-color:var(--r2f);--vs-soft:var(--r2f-soft);margin-top:14px">
+      <div class="card card--pad">
+        <div class="vs-head">
+          <span class="chip chip--r2f">R2F</span>
+          <h2>Request to Fulfill</h2>
+        </div>
+        <p class="vs-purpose">把 IT 变成“服务经纪商”：服务像商品一样被订阅、申请、交付、计费。</p>
+        <p style="margin-top:10px">
+          这一段是 IT4IT 最有“商业感”的部分。它要求 IT 把能提供的东西<b>产品化</b>：
+          有目录、有价格、有 SLA、有账单。员工不该靠“找熟人开权限”，而该像网购一样自助完成。
+        </p>
+
+        <div class="stage-flow">
+          <button class="stage" data-detail='<b>Publish · 发布</b><ul><li>把服务打包成“商品”（Offer），写清范围、价格、SLA</li><li>放进可被搜索、可被比较的服务目录</li><li>产出：Offer 与服务目录条目</li></ul>'>
+            <span class="sn">STAGE 1</span><span class="st">Publish</span><span class="sd">发布</span></button>
+          <button class="stage" data-detail='<b>Subscribe · 订阅</b><ul><li>用户自助申请，走审批、合规与预算校验</li><li>形成订阅关系，而不是一张张纸质工单</li><li>产出：订阅（Subscription）</li></ul>'>
+            <span class="sn">STAGE 2</span><span class="st">Subscribe</span><span class="sd">订阅</span></button>
+          <button class="stage" data-detail='<b>Fulfill · 履约</b><ul><li>开通账号、发放设备、部署实例</li><li>把“承诺的服务”变成“实际可用的服务”</li><li>产出：服务合同（Service Contract）生效</li></ul>'>
+            <span class="sn">STAGE 3</span><span class="st">Fulfill</span><span class="sd">履约</span></button>
+          <button class="stage" data-detail='<b>Measure · 度量</b><ul><li>用量、成本、满意度、SLA 达成情况</li><li>计费与分摊（Showback / Chargeback）</li><li>产出：用量记录与费用记录，回流给 S2P 决策</li></ul>'>
+            <span class="sn">STAGE 4</span><span class="st">Measure</span><span class="sd">度量</span></button>
+        </div>
+        <div class="stage-detail"></div>
+
+        <div class="meta-grid">
+          <div class="meta-box">
+            <h4>关键功能组件</h4>
+            <p>服务目录编排（Catalog Composition）、商品管理（Offer Management）、请求归并（Request Rationalization）、履约执行（Fulfillment Execution）、用量（Usage）、计费（Chargeback/Showback）</p>
+          </div>
+          <div class="meta-box">
+            <h4>产出 / 交接的数据对象</h4>
+            <p><b>服务合同（Service Contract）</b>：IT 与用户之间“我提供什么、什么标准”的正式约定；还有 Offer、订阅、计费合同。</p>
+          </div>
+          <div class="meta-box">
+            <h4>一句话场景</h4>
+            <p>新员工入职，在门户里勾选“标准笔记本 + 邮箱 + VPN”，三天内全部到位，月底自动分摊到部门成本。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= D2C ================= -->
+    <div class="vs-panel" data-vs="d2c" style="--vs-color:var(--d2c);--vs-soft:var(--d2c-soft);margin-top:14px">
+      <div class="card card--pad">
+        <div class="vs-head">
+          <span class="chip chip--d2c">D2C</span>
+          <h2>Detect to Correct</h2>
+        </div>
+        <p class="vs-purpose">让服务始终维持在承诺的水平 —— 发现偏差、定位根因、受控修复。</p>
+        <p style="margin-top:10px">
+          注意它的名字不是“运维”，而是“发现到纠正”。差别在于：它假设<b>服务一定会偏离承诺</b>，
+          所以要有一条从“感知偏差”到“恢复承诺”的闭环。这正是 SRE、可观测性想做的事，
+          IT4IT 只是把它放进了端到端价值链里。
+        </p>
+
+        <div class="stage-flow">
+          <button class="stage" data-detail='<b>Detect · 发现</b><ul><li>监控指标、日志、用户体验，发现“实际服务”偏离“期望服务”</li><li>产出：事件（Event）、告警</li><li>关键组件：服务监控（Service Monitoring）</li></ul>'>
+            <span class="sn">STAGE 1</span><span class="st">Detect</span><span class="sd">发现</span></button>
+          <button class="stage" data-detail='<b>Diagnose · 诊断</b><ul><li>从事件到事件单、问题单，定位根因</li><li>需要配置数据（CMDB）才知道“影响了谁”</li><li>产出：事件（Incident）、问题（Problem）</li></ul>'>
+            <span class="sn">STAGE 2</span><span class="st">Diagnose</span><span class="sd">诊断</span></button>
+          <button class="stage" data-detail='<b>Change · 变更</b><ul><li>用受控变更修复：回滚、扩容、打补丁</li><li>变更也要登记，否则下一次故障又查不到</li><li>产出：变更记录、新的配置项</li></ul>'>
+            <span class="sn">STAGE 3</span><span class="st">Change</span><span class="sd">变更</span></button>
+          <button class="stage" data-detail='<b>Resolve · 恢复</b><ul><li>服务恢复，关闭事件，沉淀知识</li><li>把反复出现的问题回流成 R2D 的新需求</li><li>产出：服务恢复证据、知识条目</li></ul>'>
+            <span class="sn">STAGE 4</span><span class="st">Resolve</span><span class="sd">恢复</span></button>
+        </div>
+        <div class="stage-detail"></div>
+
+        <div class="meta-grid">
+          <div class="meta-box">
+            <h4>关键功能组件</h4>
+            <p>服务监控（Service Monitoring）、事件（Event）、事件单（Incident）、问题（Problem）、变更控制（Change Control）、配置管理（Configuration Management）、诊断与修复、服务级别（Service Level）</p>
+          </div>
+          <div class="meta-box">
+            <h4>产出 / 交接的数据对象</h4>
+            <p><b>期望服务（Desired Service）</b> vs <b>实际服务（Actual Service）</b>：D2C 关心的就是这两者之间的差距。</p>
+          </div>
+          <div class="meta-box">
+            <h4>一句话场景</h4>
+            <p>支付接口 P99 抖动 → 自动告警 → 定位到某个实例 → 回滚变更 → 恢复，全程记录在同一个服务对象上。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="callout callout--warn reveal">
+      <div class="ico">△</div>
+      <div>
+        <p><strong>版本提示（重要）：</strong>上面这套「4 条价值流 + 阶段名」是最广为流传的 <b>v2.x 口径</b>。
+        2022 年发布的 <b>IT4IT v3.0</b> 做了较大调整：引入「数字产品（Digital Product）」与「数字产品主干（Digital Product Backbone）」，
+        并把价值流重组为 <b>7 条</b>（Evaluate / Explore / Integrate / Deploy / Release / Consume / Operate）。
+        如果你在看最新资料，会看到这套新说法。但内核没变：<b>用端到端价值流 + 功能组件 + 统一数据对象来描述 IT</b>。</p>
+        <p class="small" style="margin:10px 0 0">其中 S2P 具体被拆成了哪两条、各自的<b>输入</b>和<b>输出</b>是什么？<a href="#s2p-v3">看下面的 v3.0 深挖 →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= v3.0 深挖：S2P → Evaluate + Explore ================= -->
+  <section class="section" id="s2p-v3">
+    <div class="kicker reveal"><span class="dot"></span> v3.0 深挖 · S2P → Evaluate ＋ Explore</div>
+    <h2 class="reveal">同一条 S2P，在 v3.0 里被拆成了两条：<span class="grad-text">Evaluate</span> 与 <span class="grad-text">Explore</span></h2>
+    <p class="lead reveal" style="max-width:780px;margin-top:8px">
+      v2.x 的 S2P 是「战略 → 组合 → 需求 → 选型」一条龙，最后交出一个 Digital Service。
+      v3.0 把它拆成两段，因为这是两种不同的决策，也由两种不同的角色负责：
+      <b>Evaluate 管“钱和方向”</b>（组合要不要平衡、钱投给谁），<b>Explore 管“方案和路线”</b>（投了之后做成什么样、先做哪块、什么时候发）。
+      两段之间接力用的不是文档，而是 v3.0 的核心数据对象——<b>范围协议（Scope Agreement）</b>。
+    </p>
+    <p class="tiny muted reveal" style="margin:8px 0 0">※ 官方名称是 <b>Explore</b>（动词，与 Evaluate / Integrate / Deploy / Release / Consume / Operate 并列），不是 “Explorer”。</p>
+
+    <div class="grid-2 reveal dd-wrap" style="margin-top:16px">
+
+      <!-- Evaluate -->
+      <div class="card card--pad dd-card dd-ev">
+        <div class="dd-head">
+          <span class="chip chip--s2p">EVALUATE</span>
+          <h3>评估 · Evaluate</h3>
+        </div>
+        <p class="dd-cn">组合层 · 让投资跟战略对齐</p>
+        <p class="dd-sub">持续评估整个数字产品组合，保持组合与业务战略一致，并识别支撑业务 / 技术目标的新数字产品机会。</p>
+        <div class="dd-facts">
+          <span><b>触发</b>组合规划周期（周 / 月 / 年）</span>
+          <span><b>主责</b>产品组合经理（Product Portfolio Manager）</span>
+        </div>
+
+        <div class="io-block io-in">
+          <div class="io-title">输入 · Inputs</div>
+          <ul class="io-list">
+            <li>七条价值流送来的<b>需求、改进想法</b>与消费需求</li>
+            <li><b>新技术机会、技术生命周期事件</b>（如 EOL）</li>
+            <li><b>政策法规、预算约束</b>（Policy / Budget Item）</li>
+            <li><b>战略主题 / 战略目标</b>（Strategic Theme / Strategic Objective）</li>
+            <li><b>企业架构</b>：架构蓝图、架构路线图项（Architecture Blueprint / Architecture Roadmap Item）</li>
+            <li>现有<b>产品组合与数字产品</b>现状、供应商与 MSP 协议</li>
+          </ul>
+        </div>
+
+        <div class="dd-stages">
+          <button class="dd-stage" data-detail='<b>Gather Influencers · 汇集影响因子</b><ul><li>把一个规划周期要用的输入收齐：需求、改进想法、新技术机会、技术生命周期事件（如 EOL）、政策法规、预算约束</li><li>做内外部环境扫描（SWOT），和业务对齐数字产品的价值交付</li><li>产出：新的或更新过的 <b>Strategic Theme / Strategic Objective</b></li></ul>'><span class="n">01</span><span class="t">Gather Influencers</span><span class="d">汇集影响因子</span></button>
+          <button class="dd-stage" data-detail='<b>Identify Gaps · 识别差距</b><ul><li>对照战略目标看现有组合：能力缺口、投资缺口、重复建设</li><li>为下一步的投资排序提供依据</li></ul>'><span class="n">02</span><span class="t">Identify Gaps</span><span class="d">识别差距</span></button>
+          <button class="dd-stage" data-detail='<b>Propose Investments · 提出投资</b><ul><li>按业务价值、风险、成本、时间、资源可用性给机会打分排序</li><li>先看组合里有没有现成方案可复用，没有才进组合待办（Portfolio Backlog）排队</li><li>产出：更新后的 <b>Scope Agreement</b></li></ul>'><span class="n">03</span><span class="t">Propose Investments</span><span class="d">提出投资</span></button>
+          <button class="dd-stage" data-detail='<b>Define Backlog Mandates · 定义待办指令</b><ul><li>把法规、指令（mandates）落进 backlog 项与 Scope Agreement</li><li>定期做组合合理化，把需要平衡掉的项打包进 Scope Agreement</li><li>批准后把<b>初期资金</b>拨给 Explore 做可行性与范围细化；产出：细化后的 Scope Agreement ＋ 架构路线图项</li></ul>'><span class="n">04</span><span class="t">Define Backlog Mandates</span><span class="d">定义待办指令</span></button>
+          <button class="dd-stage" data-detail='<b>Ensure Governance · 治理把关</b><ul><li>组合层面的治理评审：投资决定要符合政策、风险与合规要求</li><li>确保组合平衡——不是“谁嗓门大谁拿钱”</li></ul>'><span class="n">05</span><span class="t">Ensure Governance</span><span class="d">治理把关</span></button>
+        </div>
+        <div class="dd-detail"></div>
+
+        <div class="io-block io-out">
+          <div class="io-title">输出 · Outputs</div>
+          <ul class="io-list">
+            <li><b>组合投资计划</b>（含资金与资源）——交给 Explore 去探索</li>
+            <li><b>排好序的数字产品组合 ＋ 架构路线图</b></li>
+            <li><b>合格的组合待办项</b>（qualified Portfolio Backlog Items）</li>
+            <li><b>更新后的 Scope Agreement</b>：范围、预算、成本收益、状态</li>
+            <li><b>初始预算</b>（Budget Item）：批准后先拨给 Explore 做可行性</li>
+          </ul>
+        </div>
+        <p class="dd-scenario">典型场景：考虑一个新数字产品 · 合理化产品组合 · 规划组合投资 · 执行产品治理</p>
+      </div>
+
+      <!-- Explore -->
+      <div class="card card--pad dd-card dd-ex">
+        <div class="dd-head">
+          <span class="chip chip--exp">EXPLORE</span>
+          <h3>探索 · Explore</h3>
+        </div>
+        <p class="dd-cn">产品层 · 把投资变成可开工的方案</p>
+        <p class="dd-sub">在 Evaluate 的 Scope Agreement 上继续：把已接受的组合待办细化、做预算、定来源，探索新功能与未来方向，让产品设计（Product Design）持续演进。</p>
+        <div class="dd-facts">
+          <span><b>触发</b>Scope Agreement 发生变化</span>
+          <span><b>主责</b>产品经理（Product Manager）</span>
+        </div>
+
+        <div class="io-block io-in">
+          <div class="io-title">输入 · Inputs</div>
+          <ul class="io-list">
+            <li>Evaluate 交来的<b>合格、已计划接受的组合待办项</b></li>
+            <li><b>初步 Scope Agreement</b>（含 mandate、预算与范围）</li>
+            <li><b>战略方向、企业架构</b>蓝图与路线图项</li>
+            <li><b>政策、现有数字产品与产品组合</b>、概念设计与需求</li>
+            <li>可行性探索所需的<b>资源与初始预算</b></li>
+          </ul>
+        </div>
+
+        <div class="dd-stages">
+          <button class="dd-stage" data-detail='<b>Prioritize Backlog Items · 给待办排序</b><ul><li>把合格的组合待办与 mandate 细化成带优先级的 Product Backlog Items</li><li>用 Evaluate 拨的预算探索产品想法、判定可行性</li><li>检查这些待办是否真的交付价值、控住风险、满足治理要求（技术、安全、可靠性、可支持性）</li><li>产出：带优先级 Product Backlog Items 的 Scope Agreement（范围与时间已细化）</li></ul>'><span class="n">01</span><span class="t">Prioritize Backlog Items</span><span class="d">给待办排序</span></button>
+          <button class="dd-stage" data-detail='<b>Define Digital Product Architecture · 定义产品架构</b><ul><li>产出 <b>Product Design</b>：逻辑组件、接口，以及安全、隐私、可用性、性能等非功能要求</li><li>原型、用户体验、数据模型等设计工件一并进版本控制</li></ul>'><span class="n">02</span><span class="t">Define Digital Product Architecture</span><span class="d">定义产品架构</span></button>
+          <button class="dd-stage" data-detail='<b>Refine Product Backlog · 细化产品待办</b><ul><li>把 Scope Agreement 拆成能分配到产品特性 / 团队的工作包</li><li>按需调整业务案例与预算</li><li>产出：建立好的架构路线图项与可执行的产品待办</li></ul>'><span class="n">03</span><span class="t">Refine Product Backlog</span><span class="d">细化产品待办</span></button>
+          <button class="dd-stage" data-detail='<b>Finalize Roadmap &amp; Scope Agreement · 定版路线图</b><ul><li>建立固定节拍（cadence）的计划会与跟踪报告</li><li>拿到干系人对 <b>Release Roadmap</b> 与结果的认可</li><li>产出：批准的架构路线图与定版 Scope Agreement，交给 Integrate</li></ul>'><span class="n">04</span><span class="t">Finalize Roadmap &amp; Scope Agreement</span><span class="d">定版路线图</span></button>
+        </div>
+        <div class="dd-detail"></div>
+
+        <div class="io-block io-out">
+          <div class="io-title">输出 · Outputs</div>
+          <ul class="io-list">
+            <li><b>详细版 Scope Agreement</b>：带优先级的 Product Backlog Items、范围与时间</li>
+            <li><b>产品待办</b>（Product Backlog ＋ Product Backlog Items）</li>
+            <li><b>发布路线图</b>（Release Roadmap / Digital Product Roadmap）</li>
+            <li><b>产品设计</b>（Product Design，可版本化）与批准的架构路线图</li>
+            <li>→ 交给 <b>Integrate</b>：批准的 Scope Agreement ＋ 一组已达成一致的 Product Backlog Items，开始做 Product Release</li>
+          </ul>
+        </div>
+        <p class="dd-scenario">典型场景：调查新产品点子 · 优化现有产品 · 验证可行性 · 退役产品</p>
+      </div>
+    </div>
+
+    <div class="handoff reveal">
+      <span class="handoff-node handoff-node--ev">Evaluate</span>
+      <span class="handoff-arrow">→</span>
+      <span class="handoff-io">Scope Agreement · Portfolio Backlog Item · Budget Item · Architecture Roadmap Item</span>
+      <span class="handoff-arrow">→</span>
+      <span class="handoff-node handoff-node--ex">Explore</span>
+      <span class="handoff-arrow">→</span>
+      <span class="handoff-io">已批准的 Scope Agreement · Product Backlog Item · Product Design · Release Roadmap</span>
+      <span class="handoff-arrow">→</span>
+      <span class="handoff-node handoff-node--in">Integrate</span>
+    </div>
+
+    <div class="table-wrap reveal" style="margin-top:18px">
+      <table class="tbl">
+        <thead>
+          <tr><th>维度</th><th>Evaluate · 评估</th><th>Explore · 探索</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>回答什么</td><td>投不投、投多少、组合怎么平衡</td><td>做成什么样、先做哪些、什么时候发</td></tr>
+          <tr><td>触发</td><td>组合规划周期（周 / 月 / 年）</td><td>Scope Agreement 发生变化</td></tr>
+          <tr><td>主责</td><td>产品组合经理（Product Portfolio Manager）</td><td>产品经理（Product Manager）</td></tr>
+          <tr><td>典型输入</td><td>需求 / 想法、技术机会与 EOL、政策与预算、战略主题与目标、企业架构、现有组合</td><td>合格的 Portfolio Backlog Item、初步 Scope Agreement、预算、战略、企业架构、政策、需求</td></tr>
+          <tr><td>典型输出</td><td>组合投资计划、排序后的组合与架构路线图、合格的 Portfolio Backlog Item、更新后的 Scope Agreement、初始预算</td><td>详细版 Scope Agreement、有优先级的 Product Backlog Item、Release Roadmap、Product Design</td></tr>
+          <tr><td>交给谁</td><td>Explore</td><td>Integrate</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="reveal" style="margin-top:30px;font-size:17px">放回 v2.x 的 S2P 里看，四段分别去了哪里</h3>
+    <div class="table-wrap reveal" style="margin-top:12px">
+      <table class="tbl">
+        <thead>
+          <tr><th>v2.x S2P 阶段</th><th>v3.0 里的落点</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Strategy · 战略</td><td><b>Evaluate · Gather Influencers</b>：把需求、技术机会、政策、预算收拢成战略主题与目标</td></tr>
+          <tr><td>Service Portfolio · 服务组合</td><td><b>Evaluate · Identify Gaps / Propose Investments</b>：看组合缺口、做投资排序与合理化</td></tr>
+          <tr><td>Demand · 需求</td><td><b>Evaluate · Gather Influencers / Propose Investments</b>：需求与想法进入组合待办（Portfolio Backlog）</td></tr>
+          <tr><td>Selection · 选型</td><td><b>Evaluate · Propose Investments ＋ Define Backlog Mandates</b>（给钱、给范围）→ <b>Explore · Prioritize / Finalize</b>（定范围、定路线图）</td></tr>
+          <tr><td>产出 Digital Service</td><td>交接物换成 <b>Scope Agreement ＋ Product Backlog Item ＋ Product Design</b>，接收方是 <b>Integrate</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout--insight reveal" style="margin-top:18px">
+      <div class="ico">✦</div>
+      <div>
+        <p><strong>一句话记住：</strong>Evaluate 决定「投什么、投多少」，交的是<b>组合投资计划 ＋ Scope Agreement</b>；Explore 决定「长什么样、怎么落地」，交的是<b>详细 Scope Agreement ＋ Product Backlog ＋ Product Design ＋ Release Roadmap</b>。
+        两段之间的接力棒始终是 <b>Scope Agreement</b>。</p>
+      </div>
+    </div>
+
+    <p class="tiny muted reveal" style="margin-top:12px">
+      依据：The Open Group《IT4IT™ Standard, Version 3.0》（C221，2022-10-17 发布）价值流章节整理；阶段清单与场景名另对照《IT4IT Conformance Requirements v3.0》（X236，2023-03）核对（Evaluate = Unit 5 / Figure 21，Explore = Unit 6 / Figure 23）。阶段名与数据对象沿用标准英文原名，中文为意译；输入 / 输出是按各阶段交付物与跨价值流依赖整理的，不是标准原表；个别阶段（Identify Gaps、Ensure Governance、Define Digital Product Architecture）标准正文未展开说明，页面按阶段名与上下文解释。标准正文需登录 The Open Group 网站查阅。
+    </p>
+    <p class="small reveal" style="margin-top:12px">
+      <a class="btn btn-ghost btn-sm" href="#playbook">继续：Evaluate / Explore 实战 playbook ↓</a>
+    </p>
+  </section>
+
+  <!-- ================= 实战 playbook：Evaluate / Explore ================= -->
+  <section class="section" id="playbook">
+    <div class="kicker reveal"><span class="dot"></span> 实战 playbook · Evaluate / Explore</div>
+    <h2 class="reveal">把这两条流跑起来：收集什么、怎么走、<span class="grad-text">产物长什么样</span></h2>
+    <p class="lead reveal" style="max-width:820px;margin-top:8px">
+      前面讲的是“它们是什么”，这一节讲“怎么干”。先约好图例：
+      <span class="lg lg-std">标准</span> 是标准里写明的阶段、数据对象与字段；
+      <span class="lg lg-prac">实践</span> 是把标准字段翻译成可执行的清单、判据与可视化，属于落地建议，不是标准原文。
+    </p>
+
+    <div class="pb-tabs reveal" role="tablist">
+      <button class="pb-tab is-active" data-pb="ev"><b>Evaluate</b><span>五步跑法 · 组合投资</span></button>
+      <button class="pb-tab" data-pb="ex"><b>Explore</b><span>四步跑法 · 产品探索</span></button>
+    </div>
+
+    <!-- ================= Evaluate panel ================= -->
+    <div class="pb-panel is-active" data-pb="ev">
+
+      <h3 class="pb-h">① 先收集什么 <span class="lg lg-prac">实践</span></h3>
+      <p class="pb-sub">对应 <b>Gather Influencers</b>：一个规划周期开始前，把下面四组信息收齐——它们大多会落成标准数据对象。</p>
+      <div class="chk-grid">
+        <div class="chk-card">
+          <h4>战略与方向 <span class="lg lg-std">标准对象</span></h4>
+          <ul>
+            <li><b>Strategic Theme / Strategic Objective</b>：Id、Name、Description</li>
+            <li>业务目标 / OKR 与年度优先级</li>
+            <li>市场、竞争、技术趋势（SWOT 环境扫描）</li>
+          </ul>
+        </div>
+        <div class="chk-card">
+          <h4>需求与机会 <span class="lg lg-std">标准对象</span></h4>
+          <ul>
+            <li>七条流回流的<b>想法 / 改进 / 需求</b>（含消费需求）</li>
+            <li><b>Portfolio Backlog Item</b>：Prioritization、Acceptance Criteria、Related Products、Demand Profile、Cost Estimation</li>
+            <li><b>Requirement</b>：功能与合规要求</li>
+          </ul>
+        </div>
+        <div class="chk-card">
+          <h4>约束与政策 <span class="lg lg-std">标准对象</span></h4>
+          <ul>
+            <li><b>Policy</b>：Id、Name、Description、Applicable Geography</li>
+            <li><b>Budget Item</b> 与预算约束（Financial Period、Investment Type）</li>
+            <li>供应商 / MSP 协议；<b>Architecture Blueprint</b>（目标架构）</li>
+          </ul>
+        </div>
+        <div class="chk-card">
+          <h4>现状与资产 <span class="lg lg-std">标准对象</span></h4>
+          <ul>
+            <li><b>Digital Product</b>：Investment Status、Portfolio、Budget、TCO、P&amp;L、Business Criticality、Security Risk</li>
+            <li>现有 <b>Scope Agreement</b> 与组合健康度</li>
+            <li><b>Architecture Roadmap Item</b>：Status、TargetDate、Roadmaps</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="pb-h">② 五步跑法 <span class="lg lg-prac">实践</span></h3>
+      <p class="pb-sub">阶段名与产物来自标准；每步的“动作 / 过关判据”是落地整理。</p>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-no">01</div>
+          <div>
+            <div class="step-head"><b>Gather Influencers</b><span>汇集影响因子</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">四类输入收齐并去重归并；更新战略路线图（Strategic intent → Architecture Roadmap → Product Roadmap → Release Roadmap）；和业务确认价值与政策要求。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v"><b>Strategic Theme / Strategic Objective</b>（新建或更新）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">每条输入都能挂到某个主题 / 目标，或明确标注“本期不做”并留下原因。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">02</div>
+          <div>
+            <div class="step-head"><b>Identify Gaps</b><span>识别差距</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">目标 vs 现状：找能力缺口、投资缺口、重复建设、该退役的产品；每个缺口配证据（数据、架构差异、成本）。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">缺口清单（挂到 Strategic Objective）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">缺口有证据、有影响的产品 / 业务范围、有优先级。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">03</div>
+          <div>
+            <div class="step-head"><b>Propose Investments</b><span>提出投资</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">给机会 + Scope Agreement 打分：业务价值 / 风险 / 成本 / 时间 / 资源；先判断能否复用组合内现有方案；再和 Portfolio Backlog 统一排位。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">更新后的 <b>Scope Agreement</b>（含优先级、范围、预算初稿）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">每个提案有评分与复用结论，能在 Portfolio Backlog 里找到位置。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">04</div>
+          <div>
+            <div class="step-head"><b>Define Backlog Mandates</b><span>定义待办指令</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">把法规 / 指令 / MSP 约束变成 Portfolio Backlog Item 与 Scope Agreement 的强制项；做组合合理化（合并 / 下架）；批准后把初期资金拨给 Explore 做可行性。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">细化 Scope Agreement、<b>Architecture Roadmap Item</b>、<b>Budget Item</b>（Financial Period、Investment Type、Approved Budget）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">每条 mandate 有 owner、有对应 backlog 项；每个批准项有预算与资金来源。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">05</div>
+          <div>
+            <div class="step-head"><b>Ensure Governance</b><span>治理把关</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">组合平衡 / 合规 / 风险评审；做 go / hold / kill；把理由写进对象，而不是只写进会议纪要。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">决策记录（Scope Agreement.Status = approved / rejected / deferred；Digital Product.Investment Status）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">每个决策有时间、签字、理由；组合不是“只增不减”。</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pb-h">③ 做到什么程度算合格 <span class="lg lg-prac">实践</span></h3>
+      <div class="dod-grid">
+        <div class="dod-col">
+          <h4>必备（没有就不算完成）</h4>
+          <ul>
+            <li>能拿出一份<b>组合投资计划</b>：资金 + 资源 + 时间，能回答“这笔钱为什么给 A 不给 B”。</li>
+            <li>每个 <b>Scope Agreement</b> 核心字段齐全：Id、Description、Business Entity、Proposed / Approved Budget（build / run 拆分）、Status、Context（portfolio / product）。</li>
+            <li>每个 <b>Portfolio Backlog Item</b> 有 Prioritization、Acceptance Criteria、Related Products、Demand Profile、Cost Estimation，并挂到 Strategic Objective 与 Architecture Roadmap Item。</li>
+            <li>每个批准项有 <b>Budget Item</b>（Financial Period、Investment Type、Approved Budget、Spend、Forecast）。</li>
+            <li><b>Digital Product.Investment Status</b> 有明确结论（invest / divest / sustain / retired）。</li>
+            <li>治理决策留痕：谁、何时、为什么。</li>
+          </ul>
+        </div>
+        <div class="dod-col dod-nice">
+          <h4>加分（做得好会明显不一样）</h4>
+          <ul>
+            <li>组合矩阵 / 热力图，一眼看出“该砍谁”。</li>
+            <li>月度或季度 cadence，而不是一年一次大评审。</li>
+            <li>有组合合理化记录（合并 / 退役），并回写到 Digital Product。</li>
+            <li>与架构路线图联动：Architecture Roadmap Item 有 TargetDate。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout callout--warn reveal" style="margin-top:14px">
+        <div class="ico">△</div>
+        <div>
+          <p><strong>不合格信号：</strong>Scope Agreement 没预算、没状态，只在邮件里；Portfolio Backlog Item 没有 Acceptance Criteria 和 Demand Profile；Propose Investments 跳过了复用检查（先看组合里有没有现成方案），导致重复建设；投资追溯不到 Strategic Objective；组合只增不减；决策只存在会议纪要里。</p>
+          <p class="small muted" style="margin:8px 0 0">标准自己就点名了这些病：数据质量与一致性差、没有全局组合视图、组合 / 服务 / 产品管理不一致、产品生命周期追踪不起来。</p>
+        </div>
+      </div>
+
+      <div class="vis-card reveal" style="margin-top:14px">
+        <h4>放行闸门 · 机器可判定 <span class="lg lg-std">标准字段</span></h4>
+        <ul class="gate-list">
+          <li><b>Scope Agreement.Status</b> = <span class="mono">approved</span></li>
+          <li><b>Approved Budget</b> 已填，且拆成 <b>build / run</b></li>
+          <li><b>Context</b> = portfolio 或 product</li>
+          <li>已关联 <b>≥1 个 Portfolio Backlog Item</b>（n:m）与 <b>Budget Item</b>（n:1）</li>
+          <li>下游 <b>Product Backlog Item</b> 已能回挂（1:n）</li>
+        </ul>
+        <p class="tiny muted">这些检查不需要“感觉”，全是数据对象的字段——ready 是一个状态，不是一次签字仪式。</p>
+      </div>
+
+      <h3 class="pb-h">④ 优雅的可视化 <span class="lg lg-prac">实践</span></h3>
+      <div class="vis-block">
+        <div class="vis-card">
+          <h4>战略追溯链 · 一笔钱为什么花</h4>
+          <div class="chain">
+            <span class="chain-step"><span class="chain-node n-theme">Strategic Theme</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-obj">Strategic Objective</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-pbi">Portfolio Backlog Item</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-sa">Scope Agreement</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-bud">Budget Item</span></span>
+          </div>
+          <p class="tiny muted">任何一笔预算都能沿链回溯到战略目标；断链就是治理信号，比看一百页 PPT 快。</p>
+        </div>
+        <div class="vis-card">
+          <h4>投资组合矩阵 · 价值 × 风险</h4>
+          <div class="matrix">
+            <div class="matrix-ylabel">业务价值高 ↑</div>
+            <div class="matrix-grid">
+              <div class="quad q1"><b>小步试点</b><span>高价值 · 高不确定</span><em>AI 客服</em></div>
+              <div class="quad q2"><b>重仓</b><span>高价值 · 低风险</span><em>ERP 升级</em></div>
+              <div class="quad q3"><b>先观察</b><span>低价值 · 高不确定</span><em>元宇宙展厅</em></div>
+              <div class="quad q4"><b>维持 / 自动化</b><span>低价值 · 低风险</span><em>旧报表</em></div>
+            </div>
+            <div class="matrix-xlabel">风险 / 成本 →</div>
+          </div>
+          <p class="tiny muted">气泡大小 = 预算；颜色区分 GtB（增长）与 RtB（维持）。标准里本来就把资金分成这两类。</p>
+        </div>
+        <div class="vis-card" style="grid-column:1/-1">
+          <h4>资金流 · 从预算到每一行待办</h4>
+          <div class="chain">
+            <span class="chain-step"><span class="chain-node n-bud">Budget Item（run / dev / overhead）</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-sa">Scope Agreement（build / run 拆分）</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-pbi">Product Backlog Item（budget / actual spend）</span></span>
+          </div>
+          <p class="tiny muted">同一笔钱在三个对象里各有一段账：组合层看 Budget Item，协议层看 Scope Agreement，执行层看 PBI 的预算与实花。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= Explore panel ================= -->
+    <div class="pb-panel" data-pb="ex">
+
+      <h3 class="pb-h">① 先收集什么 <span class="lg lg-prac">实践</span></h3>
+      <p class="pb-sub">Explore 的触发是 <b>Scope Agreement 发生变化</b>——所以它的输入几乎都围绕这张已谈好的协议。</p>
+      <div class="chk-grid">
+        <div class="chk-card">
+          <h4>来自 Evaluate <span class="lg lg-std">标准对象</span></h4>
+          <ul>
+            <li>qualified <b>Portfolio Backlog Item</b>（已接受、已计划）</li>
+            <li>初步 <b>Scope Agreement</b>（关联 Portfolio Backlog Item / Budget Item）</li>
+            <li><b>Budget Item</b>：初期资金与资源</li>
+            <li>Strategic Objective / Theme、Architecture Blueprint / Roadmap Item</li>
+          </ul>
+        </div>
+        <div class="chk-card">
+          <h4>其他输入 <span class="lg lg-std">标准对象</span></h4>
+          <ul>
+            <li><b>Policy</b>（合规 / 安全约束）</li>
+            <li><b>Digital Product</b> 与 Product Portfolio 现状</li>
+            <li><b>Requirement</b> 与概念 <b>Product Design</b></li>
+            <li>来自 <b>Integrate</b> 的进度反馈（Scope Agreement 变更的触发器）</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="pb-h">② 四步跑法 <span class="lg lg-prac">实践</span></h3>
+      <p class="pb-sub">Explore 的节奏是“快循环”：MVP / PoC / 概念服务，快速验证后再定版。</p>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-no">01</div>
+          <div>
+            <div class="step-head"><b>Prioritize Backlog Items</b><span>给待办排序</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">把 qualified Portfolio Backlog Item 和 mandate 细化成 Product Backlog Item（epic / feature / story）；用 Evaluate 拨的预算做可行性；检查价值、风险与治理（技术、安全、可靠性、可支持性）。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">带优先级的 <b>Product Backlog Items</b> + Scope Agreement（scope / timing 细化）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">每个 PBI 有 Acceptance Criteria、估算、依赖，并能追到 Portfolio Backlog Item。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">02</div>
+          <div>
+            <div class="step-head"><b>Define Digital Product Architecture</b><span>定义产品架构</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">定义 <b>Product Design</b>：逻辑组件、接口、非功能要求（安全 / 隐私 / 可用性 / 性能）；原型、UX、数据模型都要版本化。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v"><b>Product Design</b>（Version + Artifacts）。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">设计有版本、有 artifacts 清单、NFR 可测；关键评审通过。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">03</div>
+          <div>
+            <div class="step-head"><b>Refine Product Backlog</b><span>细化产品待办</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">拆工作包（epic → feature → story）；按需调整 scope、business case、budget；把 PBI 挂到 Product Release。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">字段齐全的 <b>Product Backlog Item</b>：Type、Parent Id、Priority、Value、Size、Definition of Done、Budget / Actual Spend、Start / End。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">每个 PBI 能放进一个迭代，有 DoD 与依赖关系。</span></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-no">04</div>
+          <div>
+            <div class="step-head"><b>Finalize Roadmap &amp; Scope Agreement</b><span>定版路线图</span></div>
+            <div class="step-row"><span class="k">动作</span><span class="v">定版 Scope Agreement；排 <b>Release Roadmap</b>（scope / 依赖 / 资源 / 日期）；干系人 buy-in；建立跟踪与变更机制，然后交给 Integrate。</span></div>
+            <div class="step-row"><span class="k">产物</span><span class="v">approved <b>Scope Agreement</b> + 定版路线图 + 交接包。</span></div>
+            <div class="step-row is-gate"><span class="k">过关</span><span class="v">Status = approved；路线图有日期 / 依赖 / 资源；Integrate 接手时不需要再问“做什么”。</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pb-h">③ 做到什么程度算合格 <span class="lg lg-prac">实践</span></h3>
+      <div class="dod-grid">
+        <div class="dod-col">
+          <h4>必备（没有就不算完成）</h4>
+          <ul>
+            <li><b>Scope Agreement</b> 从 created / proposed 走到 <b>approved</b>，含 budget（build / run）、scope、timing、context。</li>
+            <li><b>Product Backlog</b> 至少三层（epic / feature / story），每条有 Type、Priority、Value、Definition of Done、Acceptance Criteria，并关联 Requirement。</li>
+            <li><b>Product Design</b> 有 Version + Artifacts（UML / 数据模型 / UX / 原型）+ 可测 NFR。</li>
+            <li><b>Release Roadmap</b> 有里程碑、依赖、资源；每个 PBI 关联到唯一 Product Release。</li>
+            <li>与 Evaluate 的 Portfolio Backlog Item、Strategic Objective 双向可追溯。</li>
+            <li>交接三件套：approved Scope Agreement + agreed Product Backlog Items + Product Design 版本。</li>
+          </ul>
+        </div>
+        <div class="dod-col dod-nice">
+          <h4>加分（做得好会明显不一样）</h4>
+          <ul>
+            <li>PoC / MVP 的验证记录（快循环的证据）。</li>
+            <li>假设 / 风险清单，以及验证 / 证伪的结论。</li>
+            <li>Architecture Blueprint 随探索更新。</li>
+            <li>干系人提前 buy-in（评审记录、签字）。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout callout--warn reveal" style="margin-top:14px">
+        <div class="ico">△</div>
+        <div>
+          <p><strong>不合格信号：</strong>Scope Agreement 还是 created / proposed 就开工；PBI 没有 Acceptance Criteria / DoD / 估算；Product Design 只有一份 PPT、没有版本；Release Roadmap 只有日期、没有依赖与资源；Scope 变更没有回写 Scope Agreement；Explore 变成第二个 PMO——强求完整设计才允许开工，而标准要的是快循环 + PoC / MVP。</p>
+        </div>
+      </div>
+
+      <div class="vis-card reveal" style="margin-top:14px">
+        <h4>交接闸门 · Explore → Integrate <span class="lg lg-std">标准原文</span></h4>
+        <ul class="gate-list">
+          <li>Integrate 收到的是 <b>approved Scope Agreement</b>，不是一个“backlog”</li>
+          <li>并附 <b>agreed set of Product Backlog Items</b>（每条有 Title / Type / Size / Priority / Value / Definition of Done）</li>
+          <li><b>Product Design</b> 有 Version + Artifacts，PBI 能挂到设计元素</li>
+          <li>Release Roadmap 有资源分配与日期，并已得到干系人认可</li>
+          <li>若协议无法兑现，<b>变更由 Explore 拥有</b>：改范围 / 时间 / 预算或供方</li>
+        </ul>
+      </div>
+
+      <h3 class="pb-h">④ 产物长什么样 <span class="lg lg-std">标准字段</span> <span class="lg lg-prac">示例值</span></h3>
+      <p class="pb-sub">下面四张是“一页纸”级别的模板示意——真实落地时通常由工具生成，但字段应对得上标准对象。</p>
+      <div class="pb-mock-grid">
+        <div class="mock">
+          <div class="mock-head"><b>SCOPE AGREEMENT · 一页纸</b><span class="mock-id">SA-2026-014 · v3</span></div>
+          <div class="mock-body">
+            <div class="mock-row"><span class="k">Context</span><span class="v">product-level（AI 客服）</span></div>
+            <div class="mock-row"><span class="k">Business Entity</span><span class="v">客户服务部</span></div>
+            <div class="mock-row"><span class="k">Anticipated Value</span><span class="v">人工坐席工作量 <b>-30%</b>，首次响应 <b>-40%</b></span></div>
+            <div class="mock-row"><span class="k">Proposed Budget</span><span class="v">Build ¥120 万 / Run ¥30 万·年</span></div>
+            <div class="mock-row"><span class="k">Approved Budget</span><span class="v">Build ¥100 万 / Run ¥25 万·年</span></div>
+            <div class="mock-row"><span class="k">Status</span><span class="v"><span class="pill-ok">approved</span></span></div>
+            <div class="mock-row"><span class="k">Linked</span><span class="v">Portfolio Backlog Item PB-102 · Budget Item BI-2026-Q1</span></div>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="mock-head"><b>PRODUCT BACKLOG · 树</b><span class="mock-id">SA-2026-014 ↔ R1</span></div>
+          <div class="mock-body">
+            <div class="tree">
+              <div class="tree-item"><span class="ty">EPIC</span><span class="ti">智能客服工作台</span><span class="meta">E-01</span></div>
+              <div class="tree-item lvl2"><span class="ty">FEAT</span><span class="ti">会话路由</span><span class="meta">F-11 · P1</span></div>
+              <div class="tree-item lvl3"><span class="ty">STORY</span><span class="ti">按技能组路由</span><span class="meta">S-111 · 5pt</span></div>
+              <div class="tree-item lvl3"><span class="ty">STORY</span><span class="ti">溢出到人工</span><span class="meta">S-112 · 3pt</span></div>
+              <div class="tree-item lvl2"><span class="ty">FEAT</span><span class="ti">知识库命中</span><span class="meta">F-12 · P2</span></div>
+              <div class="tree-item lvl3"><span class="ty">STORY</span><span class="ti">RAG 检索</span><span class="meta">S-121 · 8pt</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="mock-head"><b>PRODUCT DESIGN · 工件包</b><span class="mock-id">PD-2026-014 · v1.2</span></div>
+          <div class="mock-body">
+            <div class="mock-row"><span class="k">Artifacts</span><span class="v">逻辑组件图 · 数据模型 · UX 线框 · 交互原型 · NFR 清单</span></div>
+            <div class="mock-row"><span class="k">NFR</span><span class="v">可用性 99.95% · P95 &lt; 300ms · 等保三级 · 数据不出境</span></div>
+            <div class="mock-row"><span class="k">Linked</span><span class="v">Requirement R-2201 · Product Backlog Item S-121 · Product Release R1</span></div>
+            <div class="mock-row"><span class="k">Version</span><span class="v">v1.2（每次发布对应一个版本）</span></div>
+          </div>
+        </div>
+        <div class="mock mock--wide">
+          <div class="mock-head"><b>RELEASE ROADMAP · 泳道</b><span class="mock-id">2026 · 3 个 Release</span></div>
+          <div class="mock-body" style="overflow-x:auto">
+            <table class="swim">
+              <thead><tr><th>泳道</th><th>R1 · Q1</th><th>R2 · Q2</th><th>R3 · Q3</th></tr></thead>
+              <tbody>
+                <tr><td>核心链路</td><td><span class="r">技能组路由</span><span class="r">溢出到人工</span></td><td><span class="r">多轮上下文</span></td><td><span class="r">跨渠道统一</span></td></tr>
+                <tr><td>数据与迁移</td><td><span class="r">知识库接入</span></td><td><span class="r">RAG 检索</span></td><td><span class="r">历史会话迁移</span></td></tr>
+                <tr><td>合规与安全</td><td><span class="r">等保评估</span></td><td><span class="r">数据脱敏</span></td><td><span class="r">审计报表</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <p class="tiny muted" style="margin-top:10px">注意：<b>Release Roadmap</b> 与 <b>Product Backlog</b> 都不是主干数据对象（公开模型里 Product Backlog 是功能组件，Release Roadmap 只出现在正文里）；标准把每个 Product Backlog Item 关联到唯一 Product Release，所以路线图本质是“PBI → Release”的映射视图，而 Product Backlog 是 PBI 的集合视图。</p>
+
+      <div class="handoff reveal" style="margin-top:14px">
+        <span class="handoff-node handoff-node--ex">Explore</span>
+        <span class="handoff-arrow">→</span>
+        <span class="handoff-io">approved Scope Agreement</span>
+        <span class="handoff-io">agreed Product Backlog Items</span>
+        <span class="handoff-io">Product Design 版本</span>
+        <span class="handoff-arrow">→</span>
+        <span class="handoff-node handoff-node--in">Integrate</span>
+      </div>
+
+      <h3 class="pb-h">⑤ 优雅的可视化 <span class="lg lg-prac">实践</span></h3>
+      <div class="vis-block">
+        <div class="vis-card" style="grid-column:1/-1">
+          <h4>Product Canvas · 一页讲清“做什么”</h4>
+          <div class="canvas">
+            <div class="canvas-cell"><b>VISION</b><span>让 80% 的常见问题在 30 秒内被自助解决</span></div>
+            <div class="canvas-cell"><b>OUTCOMES</b><span>人工坐席 -30% · 首响 -40% · 满意度 ≥ 4.6</span></div>
+            <div class="canvas-cell"><b>SCOPE（本期）</b><span>技能组路由 · 溢出 · RAG 知识命中</span></div>
+            <div class="canvas-cell"><b>BACKLOG</b><span>E-01 → F-11 / F-12 → S-111 / S-112 / S-121</span></div>
+            <div class="canvas-cell"><b>ROADMAP</b><span>R1 路由 + 知识库 · R2 多轮 · R3 跨渠道</span></div>
+            <div class="canvas-cell"><b>RISKS / 假设</b><span>知识库质量 · 合规审批周期 · 旧系统接口能力</span></div>
+          </div>
+          <p class="tiny muted">评审时不用翻 80 页 PPT：从 Vision 到 Roadmap 一条线，任何一格说不清就是探索还没做完。</p>
+        </div>
+        <div class="vis-card" style="grid-column:1/-1">
+          <h4>追溯链 · 从战略目标到 Release</h4>
+          <div class="chain">
+            <span class="chain-step"><span class="chain-node n-obj">Strategic Objective</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-pbi">Portfolio Backlog Item</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-sa">Scope Agreement</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-pbi">Product Backlog Item</span><span class="chain-arrow">→</span></span>
+            <span class="chain-step"><span class="chain-node n-rel">Product Release</span></span>
+          </div>
+          <p class="tiny muted">标准原关系：Portfolio Backlog Item ↔ Strategic Objective / Architecture Roadmap Item；Scope Agreement ↔ Portfolio Backlog Item / Budget Item / Product Backlog Item；Product Backlog Item → Product Release。串起来就是一条可审计的链。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="tiny muted reveal" style="margin-top:18px">
+      依据：阶段、数据对象与字段来自 IT4IT 3.0 标准（C221）及其公开模型（X236 已核对阶段与场景）；“跑法 / 判据 / 可视化”是为落地整理的建议，不是标准原文。示例中的编号、金额与日期均为演示值。
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">为什么这四条能覆盖整个 IT？</h2>
+    <div class="grid-2 reveal" style="margin-top:16px">
+      <div class="card card--pad">
+        <h3 style="font-size:16px;margin-bottom:8px">它们横跨部门，而不是复制部门</h3>
+        <p class="small" style="margin:0">开发、运维、服务台、财务、架构团队……在同一条价值流里都只是“某个阶段的参与者”。这样描述出来的 IT 才是一个整体，而不是一张组织架构图。</p>
+      </div>
+      <div class="card card--pad">
+        <h3 style="font-size:16px;margin-bottom:8px">每一段都有明确的“交接物”</h3>
+        <p class="small" style="margin:0">S2P 交 Digital Service，R2D 交 Service Release，R2F 交 Service Contract，D2C 交 Desired/Actual Service 的差距。交接物清晰，才能度量、才能自动化。</p>
+      </div>
+      <div class="card card--pad">
+        <h3 style="font-size:16px;margin-bottom:8px">可以单独改造，不必推倒重来</h3>
+        <p class="small" style="margin:0">你完全可以只优化 R2F（先把服务目录和订阅做起来），其他三条不动。这正是 IT4IT 声称“可落地”的原因。</p>
+      </div>
+      <div class="card card--pad">
+        <h3 style="font-size:16px;margin-bottom:8px">能算出“价值流”的账</h3>
+        <p class="small" style="margin:0">一旦数据按对象串联，就能算出每条流的时间、成本、返工率。这比“按部门分摊预算”有用得多。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card card--pad card--lift reveal" style="border-color:#dedbfb;background:linear-gradient(180deg,#faf9ff,#fff)">
+      <div class="chip chip--brand" style="margin-bottom:10px">下一站预告</div>
+      <h3 style="margin-bottom:6px">四条流之所以能“接上”，靠的是里面流动的数据对象。</h3>
+      <p class="small" style="margin:0 0 16px">下一站我们打开“服务主干（Service Backbone）”，看一个需求如何一路变成服务合同。</p>
+      <a class="btn btn-primary" href="4-data-model.html">进入第 4 站：让数据成为主角 →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <span class="hint">第 3 站 · 价值流</span>
+  <div class="nav-links" id="footer-nav"></div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+/* 第 3 站新增：v3.0 深挖里 Evaluate / Explore 的阶段点选（只作用于 .dd-card，不影响上面的四条流标签页） */
+(function () {
+  document.querySelectorAll(".dd-card").forEach(function (card) {
+    var stages = card.querySelectorAll(".dd-stage");
+    var detail = card.querySelector(".dd-detail");
+    if (!stages.length || !detail) return;
+    stages.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        stages.forEach(function (b) { b.classList.toggle("is-on", b === btn); });
+        detail.innerHTML = btn.getAttribute("data-detail") || "";
+      });
+    });
+    stages[0].click();
+  });
+})();
+
+/* 实战 playbook：Evaluate / Explore 切换（支持 #pb-explore / #pb-evaluate 深链） */
+(function () {
+  var tabs = document.querySelectorAll(".pb-tab");
+  var panels = document.querySelectorAll(".pb-panel");
+  if (!tabs.length || !panels.length) return;
+
+  function activate(key) {
+    tabs.forEach(function (t) { t.classList.toggle("is-active", t.getAttribute("data-pb") === key); });
+    panels.forEach(function (p) { p.classList.toggle("is-active", p.getAttribute("data-pb") === key); });
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () { activate(t.getAttribute("data-pb")); });
+  });
+
+  if (location.hash === "#pb-explore") activate("ex");
+  else if (location.hash === "#pb-evaluate") activate("ev");
+})();
+</script>
+</body>
+</html>

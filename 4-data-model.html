@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 4 站 · 让数据成为主角 | IT4IT 入门</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-step="data">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">4</span>
+    <span class="brand-text">IT4IT 入门<small>IT 价值链 · 交互式小课</small></span>
+  </a>
+  <nav class="stepper" id="stepper" aria-label="学习步骤"></nav>
+  <div class="topbar-meta">
+    <div class="mini-progress"><i data-progress-bar></i></div>
+    <span data-progress-text>0 / 7 站</span>
+  </div>
+</header>
+
+<main class="page">
+
+  <div class="trail reveal">
+    <span>第 4 站 / 7</span>
+    <span class="bar"><i data-progress-bar></i></span>
+    <span data-progress-pct>0%</span>
+  </div>
+
+  <section class="hero">
+    <p class="kicker reveal"><span class="dot"></span> 最硬的一层</p>
+    <h1 class="reveal">流程会变，工具会换，<br><span class="grad-text">数据对象</span>才是骨架</h1>
+    <p class="lead reveal" style="max-width:720px">
+      大多数框架只告诉你“该做哪些流程”。IT4IT 多做了一件事：它规定了
+      <b>流程之间交接的那个“东西”长什么样</b>。这个“东西”就是数据对象。
+      一旦有了统一的定义，工具之间就不再需要“翻译”，而是直接引用同一个对象。
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="callout callout--quote reveal">
+      想想你上一次跨部门交接：你交出去的是一份 Excel、一张截图，还是一个<strong>有编号、有状态、能被别人系统直接读取的对象</strong>？
+      <cite>—— IT4IT 的出发点，就是让后者成为默认</cite>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">九个你必须认识的数据对象</h2>
+    <p class="muted small reveal" style="margin:6px 0 16px">点击卡片，看它的定义和属于哪条价值流。</p>
+
+    <div class="obj-grid reveal">
+      <button class="obj" data-obj="digital-service"
+        data-title="Digital Service · 数字服务"
+        data-desc="S2P 的产出。对一个“值得投资的服务”的概念性定义：它解决什么业务问题、面向谁、边界在哪。它是后面所有设计、构建、上架的源头。">
+        <b>Digital Service</b><span>数字服务</span><span class="chip chip--s2p pill">S2P</span>
+      </button>
+      <button class="obj" data-obj="service-system"
+        data-title="Service System · 服务系统"
+        data-desc="R2D 的产出。构成这项服务的组件集合：人、流程、应用、基础设施。它回答“这个服务到底由什么拼起来”。">
+        <b>Service System</b><span>服务系统</span><span class="chip chip--r2d pill">R2D</span>
+      </button>
+      <button class="obj" data-obj="service-release"
+        data-title="Service Release · 服务发布"
+        data-desc="R2D 的交付物。一次可部署、可回滚的具体版本，带着构建包、测试证据、配置项。它是“能上线”的唯一凭证。">
+        <b>Service Release</b><span>服务发布</span><span class="chip chip--r2d pill">R2D</span>
+      </button>
+      <button class="obj" data-obj="offer"
+        data-title="Offer · 商品"
+        data-desc="R2F 的产出。把服务包装成用户可订阅的“商品”：范围、价格、SLA、审批路径。没有 Offer，服务就只是内部资产，不是可消费的产品。">
+        <b>Offer</b><span>商品 / 服务项</span><span class="chip chip--r2f pill">R2F</span>
+      </button>
+      <button class="obj" data-obj="subscription"
+        data-title="Subscription · 订阅"
+        data-desc="用户对某个 Offer 的订购关系。它记录“谁、什么时候、订了什么、按什么周期”。订阅是后续履约和计费的依据。">
+        <b>Subscription</b><span>订阅</span><span class="chip chip--r2f pill">R2F</span>
+      </button>
+      <button class="obj" data-obj="service-contract"
+        data-title="Service Contract · 服务合同"
+        data-desc="IT4IT 里最核心的交接物之一：提供方与消费方之间的正式约定——我提供什么、达到什么标准、你付多少。它是 R2F 的产出，也是 D2C 度量服务水平的依据。">
+        <b>Service Contract</b><span>服务合同</span><span class="chip chip--r2f pill">R2F</span>
+      </button>
+      <button class="obj" data-obj="chargeback"
+        data-title="Chargeback Contract · 计费合同"
+        data-desc="把成本怎么分摊、按什么口径计费写清楚的对象。它让 IT 从“成本中心”变成“能被核算的服务提供方”。">
+        <b>Chargeback Contract</b><span>计费合同</span><span class="chip chip--r2f pill">R2F</span>
+      </button>
+      <button class="obj" data-obj="desired-service"
+        data-title="Desired Service · 期望服务"
+        data-desc="按合同“应该达到”的状态：SLA、容量、可用性目标。它是 D2C 的度量基准——没有它，监控就只是一堆数字。">
+        <b>Desired Service</b><span>期望服务</span><span class="chip chip--d2c pill">D2C</span>
+      </button>
+      <button class="obj" data-obj="actual-service"
+        data-title="Actual Service · 实际服务"
+        data-desc="监控与运维测到的“真实状态”。Desired 与 Actual 之间的差距，就是一切事件、问题、变更的来源。">
+        <b>Actual Service</b><span>实际服务</span><span class="chip chip--d2c pill">D2C</span>
+      </button>
+    </div>
+
+    <div class="card card--pad reveal" style="margin-top:14px;background:linear-gradient(180deg,#fff,#fbfbff)">
+      <h4 style="margin-bottom:6px;color:var(--faint);letter-spacing:.06em;font-size:12px">对象详情</h4>
+      <div id="obj-detail">
+        <p class="small muted" style="margin:0">👆 点上面任意一张卡片。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">跟着一个需求走一遍</h2>
+    <p class="muted small reveal" style="margin:6px 0 14px">这是一个“数据对象”在四条价值流里流动的完整路径。</p>
+
+    <div class="flow-stage reveal">
+      <div class="btn-row" style="margin-bottom:14px">
+        <button class="btn btn-sm btn-primary" id="play-btn">▶ 播放旅程</button>
+        <button class="btn btn-sm btn-ghost" id="reset-btn">重置</button>
+      </div>
+
+      <div class="flow-track" id="flow-track">
+        <div class="flow-node" data-i="0"><b>Digital Service</b><span>S2P</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="1"><b>Service Release</b><span>R2D</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="2"><b>Offer</b><span>R2F</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="3"><b>Subscription</b><span>R2F</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="4"><b>Service Contract</b><span>R2F</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="5"><b>Desired Service</b><span>D2C</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="6"><b>Actual Service</b><span>D2C</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" data-i="7"><b>Change → 回流</b><span>D2C→R2D</span></div>
+      </div>
+
+      <p class="flow-hint">← 左右滑动查看完整路径 →</p>
+      <p class="flow-note" id="flow-note">点「播放旅程」，看一个需求如何一路变成可被监控、可被计费的服务。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">为什么这层最值钱？</h2>
+    <div class="grid-3 reveal" style="margin-top:16px">
+      <div class="card card--pad card-hover">
+        <div class="chip chip--brand" style="margin-bottom:10px">唯一身份</div>
+        <h3 style="font-size:16px">一个对象，只活一次</h3>
+        <p class="small" style="margin:6px 0 0">同一个需求在 Jira、Excel、邮件里各有一份，是 3 个对象还是 1 个对象？IT4IT 说：1 个。其他系统引用它，而不是复制它。</p>
+      </div>
+      <div class="card card--pad card-hover">
+        <div class="chip chip--brand" style="margin-bottom:10px">可追溯</div>
+        <h3 style="font-size:16px">每个变更都能回答“为什么”</h3>
+        <p class="small" style="margin:6px 0 0">从一次线上变更，能一路追到它对应的需求、设计、测试证据。审计和复盘不再靠回忆。</p>
+      </div>
+      <div class="card card--pad card-hover">
+        <div class="chip chip--brand" style="margin-bottom:10px">可度量</div>
+        <h3 style="font-size:16px">价值流才有账可算</h3>
+        <p class="small" style="margin:6px 0 0">时间、成本、返工，都能挂在对象上。于是“这条价值流值不值”从感觉变成了数字。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid-2 reveal">
+      <div class="card card--pad">
+        <div class="chip" style="margin-bottom:10px;color:#b91c1c;background:#fff5f5;border-color:#f7d4d4">没有主干时</div>
+        <ul class="small" style="margin:0;padding-left:18px;color:var(--ink-2)">
+          <li>每次交接都要重新解释一遍背景</li>
+          <li>同一个字段，三套系统三种口径</li>
+          <li>出问题只能靠“找最熟的那个人”</li>
+          <li>想算端到端周期，先花两周对数</li>
+        </ul>
+      </div>
+      <div class="card card--pad" style="border-color:#cfe8dd;background:linear-gradient(180deg,#f7fdfa,#fff)">
+        <div class="chip chip--ok" style="margin-bottom:10px">有服务主干时</div>
+        <ul class="small" style="margin:0;padding-left:18px;color:var(--ink-2)">
+          <li>交接的是对象 ID，不是文档</li>
+          <li>字段定义一次，处处一致</li>
+          <li>任何环节都能看到全链路状态</li>
+          <li>度量是副产品，不用额外统计</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="callout callout--insight reveal">
+      <div class="ico">i</div>
+      <div>
+        <p><strong>官方口径补充：</strong>IT4IT Level 1 实际上用<b>五个核心概念</b>描述这套架构：价值流（Value Stream）、功能组件（Functional Component）、
+        服务生命周期数据对象（Service Lifecycle Data Object）、<b>服务主干数据对象（Service Model Backbone Data Object）</b>、关系（Relationship）。
+        本课把它收敛成“价值流 / 功能组件 / 数据模型”三层，是为了便于记忆——真实标准里，主干对象之间的<b>关系</b>和对象本身一样重要。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card card--pad card--lift reveal" style="border-color:#dedbfb;background:linear-gradient(180deg,#faf9ff,#fff)">
+      <div class="chip chip--brand" style="margin-bottom:10px">下一站预告</div>
+      <h3 style="margin-bottom:6px">最后一个困惑：那它和 ITIL、DevOps 到底谁管谁？</h3>
+      <p class="small" style="margin:0 0 16px">下一站把 IT4IT 放回工具箱，看它站在哪一层、什么时候值得用。</p>
+      <a class="btn btn-primary" href="5-relations.html">进入第 5 站：它与 ITIL / DevOps 的关系 →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <span class="hint">第 4 站 · 数据</span>
+  <div class="nav-links" id="footer-nav"></div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+  (function () {
+    var notes = [
+      "① 立项：业务提出“客户自助改地址”。S2P 判断它值得投资，产出一个 <b>Digital Service</b> 的定义。",
+      "② 交付：R2D 设计、开发、测试、部署，交出带版本、可回滚的 <b>Service Release</b>。",
+      "③ 上架：R2F 把它包装成可订阅的 <b>Offer</b>——范围、价格、SLA 一次说清。",
+      "④ 订阅：员工在门户自助申请，形成 <b>Subscription</b>，审批自动流转。",
+      "⑤ 合同：开通完成，<b>Service Contract</b> 生效——IT 承诺什么、业务付多少，写进对象里。",
+      "⑥ 期望：合同里的 SLA 被翻译成 <b>Desired Service</b>，成为监控的基准线。",
+      "⑦ 实际：监控持续采集 <b>Actual Service</b>，与期望值一比，差距就是问题。",
+      "⑧ 回流：差距触发变更或新需求，回到 R2D——四条价值流在这里闭合成环。"
+    ];
+    var nodes = Array.prototype.slice.call(document.querySelectorAll(".flow-node"));
+    var arrows = Array.prototype.slice.call(document.querySelectorAll(".flow-arrow"));
+    var note = document.getElementById("flow-note");
+    var timer = null;
+
+    function clear() {
+      if (timer) { clearInterval(timer); timer = null; }
+      nodes.forEach(function (n) { n.classList.remove("is-on", "is-past"); });
+      arrows.forEach(function (a) { a.classList.remove("is-on"); });
+    }
+
+    function go(i) {
+      nodes.forEach(function (n, j) {
+        n.classList.toggle("is-on", j === i);
+        n.classList.toggle("is-past", j < i);
+      });
+      arrows.forEach(function (a, j) { a.classList.toggle("is-on", j < i); });
+      note.innerHTML = notes[i];
+    }
+
+    var i = 0;
+    document.getElementById("play-btn").addEventListener("click", function () {
+      clear();
+      i = 0; go(0);
+      timer = setInterval(function () {
+        i++;
+        if (i >= notes.length) { clearInterval(timer); timer = null; return; }
+        go(i);
+      }, 1700);
+    });
+    document.getElementById("reset-btn").addEventListener("click", function () {
+      clear();
+      note.innerHTML = "点「播放旅程」，看一个需求如何一路变成可被监控、可被计费的服务。";
+    });
+    nodes.forEach(function (n) {
+      n.addEventListener("click", function () {
+        if (timer) { clearInterval(timer); timer = null; }
+        go(parseInt(n.getAttribute("data-i"), 10));
+      });
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 7 站 · 一页纸记住 IT4IT | IT4IT 入门</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-step="summary">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">4</span>
+    <span class="brand-text">IT4IT 入门<small>IT 价值链 · 交互式小课</small></span>
+  </a>
+  <nav class="stepper" id="stepper" aria-label="学习步骤"></nav>
+  <div class="topbar-meta">
+    <div class="mini-progress"><i data-progress-bar></i></div>
+    <span data-progress-text>0 / 7 站</span>
+  </div>
+</header>
+
+<main class="page">
+
+  <div class="trail reveal">
+    <span>第 7 站 / 7</span>
+    <span class="bar"><i data-progress-bar></i></span>
+    <span data-progress-pct>0%</span>
+  </div>
+
+  <section class="hero reveal">
+    <p class="kicker"><span class="dot"></span> 速查卡 · 随时回来复习</p>
+    <h1>一页纸，记住 IT4IT</h1>
+    <p class="lead" style="margin-top:12px;max-width:640px">
+      到这里，你已经走完了全部 7 站。这一页可以收藏起来，也可以直接念给同事听——
+      能讲清楚，才算真的掌握。
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="card card--pad card--lift reveal" style="border-color:#dedbfb;background:linear-gradient(180deg,#faf9ff,#fff)">
+      <div class="chip chip--brand" style="margin-bottom:10px">一句话版本</div>
+      <h2 style="font-size:22px;line-height:1.6;margin:0">
+        IT4IT 是 The Open Group 的参考架构，它用<b>四条端到端的价值流</b>、一组<b>与产品解耦的功能组件</b>、
+        和一套<b>统一的服务数据对象</b>，把 IT 从“工具孤岛”重新组织成一条可度量、可自动化的价值链。
+      </h2>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">速查表</h2>
+    <div class="cheat reveal" style="margin-top:16px">
+      <div class="cheat-row">
+        <div class="k">是什么</div>
+        <div class="v">The Open Group 发布的<b>参考架构</b>（Reference Architecture），不是流程模型、不是软件产品、不是一个部门。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">解决什么</div>
+        <div class="v">工具孤岛、点对点集成、端到端不可见、IT 无法按价值流算账。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">怎么组织</div>
+        <div class="v"><b>价值流</b>（干什么）→ <b>功能组件</b>（需要什么能力）→ <b>数据对象</b>（交接什么）。组件与工具解耦，工具可换、架构不动。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">四条价值流</div>
+        <div class="v">
+          <span class="chip chip--s2p">S2P 战略到组合</span>
+          <span class="chip chip--r2d">R2D 需求到部署</span>
+          <span class="chip chip--r2f">R2F 请求到履约</span>
+          <span class="chip chip--d2c">D2C 发现到纠正</span>
+        </div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">关键交接物</div>
+        <div class="v"><b>Digital Service</b>（立项产出）→ <b>Service Release</b>（交付产出）→ <b>Service Contract</b>（消费约定）→ <b>Desired / Actual Service</b>（运维度量）。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">官方五概念</div>
+        <div class="v">价值流、功能组件、服务生命周期数据对象、<b>服务主干数据对象</b>、关系。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">版本现状</div>
+        <div class="v">v2.0（2015）→ v2.1（2017）→ <b>v3.0（2022）</b>：引入数字产品与数字产品主干，价值流重组为 7 条（Evaluate / Explore / Integrate / Deploy / Release / Consume / Operate）。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">与 ITIL</div>
+        <div class="v"><b>互补</b>，不是替代。ITIL 给流程最佳实践，IT4IT 给承载这些流程的信息模型与架构地基。</div>
+      </div>
+      <div class="cheat-row">
+        <div class="k">怎么开始</div>
+        <div class="v">从最痛的一条价值流切入，做“现状工具 → 功能组件”的映射，找出冗余、缺口与第一个该自动化的接口。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">四流对照（v2.x 口径）</h2>
+    <div class="table-wrap reveal" style="margin-top:16px">
+      <table class="tbl">
+        <thead>
+          <tr><th>价值流</th><th>一句话</th><th>典型阶段</th><th>交出什么</th></tr>
+        </thead>
+        <tbody>
+          <tr><td style="color:var(--s2p)">S2P</td><td>决定该投什么</td><td>Strategy → Service Portfolio → Demand → Selection</td><td>Digital Service</td></tr>
+          <tr><td style="color:var(--r2d)">R2D</td><td>把它造出来</td><td>Plan &amp; Design → Develop → Test → Deploy</td><td>Service Release</td></tr>
+          <tr><td style="color:var(--r2f)">R2F</td><td>让员工用上它</td><td>Publish → Subscribe → Fulfill → Measure</td><td>Service Contract</td></tr>
+          <tr><td style="color:var(--d2c)">D2C</td><td>保证它一直好用</td><td>Detect → Diagnose → Change → Resolve</td><td>Actual Service 与差距</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">自检：能把这几句讲清楚吗？</h2>
+    <p class="muted small reveal" style="margin:6px 0 14px">逐项勾选，全部确认后解锁完成卡片。</p>
+    <div class="checklist reveal">
+      <label class="check"><input type="checkbox" data-check-id="c1"><span>我能解释 IT4IT 为什么<span style="font-weight:700">不是</span>流程模型，以及它和 ITIL 是什么关系。</span></label>
+      <label class="check"><input type="checkbox" data-check-id="c2"><span>我能说出四条价值流的英文全称，以及各自“从哪里开始、到哪里结束”。</span></label>
+      <label class="check"><input type="checkbox" data-check-id="c3"><span>我能解释“功能组件不等于工具”，并举一个例子。</span></label>
+      <label class="check"><input type="checkbox" data-check-id="c4"><span>我能说出至少三个关键数据对象，以及它们在哪条价值流之间交接。</span></label>
+      <label class="check"><input type="checkbox" data-check-id="c5"><span>我能讲清 IT4IT 想解决的核心问题：工具孤岛与点对点集成。</span></label>
+      <label class="check"><input type="checkbox" data-check-id="c6"><span>我知道 v3.0 相比 v2.x 的主要变化，并知道内核没变。</span></label>
+    </div>
+    <div class="btn-row reveal" style="margin-top:14px">
+      <button class="btn btn-primary" id="finish-btn" disabled>完成学习</button>
+      <span class="small muted" id="finish-hint">0 / 6 项已确认</span>
+    </div>
+    <div id="done-card" style="margin-top:16px"></div>
+  </section>
+
+  <section class="section">
+    <h2 class="reveal">延伸阅读</h2>
+    <div class="grid-2 reveal" style="margin-top:16px">
+      <a class="card card--pad card-hover" href="https://www.opengroup.org/it4it" target="_blank" rel="noopener" style="color:inherit">
+        <div class="chip chip--brand" style="margin-bottom:8px">官方</div>
+        <h3 style="font-size:16px">IT4IT 官方页面</h3>
+        <p class="small muted" style="margin:6px 0 0">The Open Group 的 IT4IT 标准介绍、白皮书与案例。</p>
+      </a>
+      <a class="card card--pad card-hover" href="https://www.opengroup.org/membership/forums/it4it-forum/it4it-faq" target="_blank" rel="noopener" style="color:inherit">
+        <div class="chip chip--brand" style="margin-bottom:8px">官方</div>
+        <h3 style="font-size:16px">IT4IT FAQ</h3>
+        <p class="small muted" style="margin:6px 0 0">“和 ITIL 什么关系”“和 DevOps 什么关系”，官方自己怎么答。</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card card--pad reveal" style="background:linear-gradient(180deg,#fff,#fbfbff)">
+      <h3 style="font-size:16px;margin-bottom:6px">重新开始</h3>
+      <p class="small muted" style="margin:0 0 14px">清除本机的学习进度与答题记录，从头再走一遍。</p>
+      <button class="btn btn-ghost btn-sm" id="reset-all">清除进度并重新开始</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <span class="hint">第 7 站 · 速查（终点）</span>
+  <div class="nav-links" id="footer-nav"></div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+  (function () {
+    document.getElementById("finish-btn").addEventListener("click", function () {
+      var box = document.getElementById("done-card");
+      box.innerHTML = '<div class="card card--pad" style="border-color:#cfe8dd;background:linear-gradient(180deg,#f7fdfa,#fff);text-align:center">' +
+        '<div style="font-size:34px;line-height:1">🎉</div>' +
+        '<h3 style="margin:8px 0 6px">全部完成，你已经掌握 IT4IT 的骨架了</h3>' +
+        '<p class="small muted" style="margin:0 0 14px">下次有人提到它，你可以先问一句：你说的是 v2.x 的四条价值流，还是 v3.0 的七条？—— 这一问就够了。</p>' +
+        '<div class="btn-row" style="justify-content:center">' +
+        '<a class="btn btn-ghost btn-sm" href="index.html">回到学习地图</a>' +
+        '<a class="btn btn-primary btn-sm" href="3-value-streams.html">再复习一遍价值流</a></div></div>';
+      box.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+
+    document.getElementById("reset-all").addEventListener("click", function () {
+      if (!confirm("确定清除本机保存的学习进度和答题记录吗？")) return;
+      ["it4it.visited.v1", "it4it.quiz.v1", "it4it.checks.v1"].forEach(function (k) {
+        try { localStorage.removeItem(k); } catch (e) {}
+      });
+      location.href = "index.html";
+    });
+  })();
+</script>
+</body>
+</html>
