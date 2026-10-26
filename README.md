@@ -24,8 +24,8 @@ python3 -m http.server 8080
 |---|---|---|
 | 起点 | `index.html` | 一句话答案 + 学习地图 |
 | 1 · 问题 | `1-silos.html` | 点一下切换「工具竖井 / 数据主线」对比图 |
-| 2 · 价值链 | `2-value-chain.html` | IT4IT 的三层结构与“为什么是四条流” |
-| 3 · 价值流 | `3-value-streams.html` | 四条流逐条拆解；v3.0 深挖：S2P → Evaluate / Explore；实战 playbook（信息清单 / 跑法 / 合格线 / 产物模板 / 可视化） |
+| 2 · 价值链 | `2-value-chain.html` | IT4IT 的三层结构；v2.x 为什么是四条流、v3.0 如何变成七条 |
+| 3 · 价值流 | `3-value-streams.html` | 先讲 v2.x 的 4 条，再讲 v3.0 的 7 条与 4 → 7 对照表；v3.0 深挖：S2P → Evaluate / Explore；实战 playbook（信息清单 / 跑法 / 合格线 / 产物模板 / 可视化） |
 | 4 · 数据 | `4-data-model.html` | 九个数据对象 + 一个需求的完整旅程动画 |
 | 5 · 定位 | `5-relations.html` | 和 ITIL / DevOps / TOGAF / COBIT 的关系、何时值得用 |
 | 6 · 自测 | `6-quiz.html` | 8 道题，即时判分 + 解析 |
@@ -52,12 +52,12 @@ IT4IT/
 ## 内容口径说明（重要）
 
 1. **“IT for IT”** 是坊间对 IT4IT 的通俗读法，**官方并未正式给出这个缩写展开**。但它“让 IT 像一家服务公司一样为自身和业务提供 IT 能力”的内核，与标准意图一致。
-2. 四条价值流及其阶段名采用最广为流传的 **v2.x** 口径：
+2. **第 3 站的主线是 v3.0 的 7 条价值流**；下面这 4 条及其阶段名是最广为流传的 **v2.x** 口径，页面把它作为历史背景与 4 → 7 对照保留：
    - S2P：Strategy → Service Portfolio → Demand → Selection
    - R2D：Plan & Design → Develop → Test → Deploy
    - R2F：Publish → Subscribe → Fulfill → Measure
    - D2C：Detect → Diagnose → Change → Resolve
-3. **v3.0（2022）** 引入了「数字产品（Digital Product）」与「数字产品主干（Digital Product Backbone）」，并把价值流重组为 **7 条**：Evaluate / Explore / Integrate / Deploy / Release / Consume / Operate。第 3 站与第 7 站都有版本提示。
+3. **v3.0（2022）** 引入了「数字产品（Digital Product）」与「数字产品主干（Digital Product Backbone）」，并把价值流重组为 **7 条**：Evaluate / Explore / Integrate / Deploy / Release / Consume / Operate。按职责整理的 4 → 7 对照是：S2P → Evaluate + Explore；R2D → Explore（需求/设计）+ Integrate + Deploy；R2F → Release + Consume；D2C → Operate。这是职责对照，不是官方逐条改名表；第 3 站有完整表格，第 7 站有速查版。
 4. 官方 Level 1 用**五个核心概念**描述架构：价值流、功能组件、服务生命周期数据对象、服务模型主干数据对象、关系。站内为了便于记忆收敛成“三层”，第 4 站有对应说明。
 
 ## 主要参考

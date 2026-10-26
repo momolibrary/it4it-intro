@@ -7,7 +7,7 @@
   var LESSONS = [
     { id: "silos", file: "1-silos.html", n: 1, label: "问题", title: "IT 自己的“部门墙”" },
     { id: "chain", file: "2-value-chain.html", n: 2, label: "价值链", title: "一条属于 IT 的价值链" },
-    { id: "streams", file: "3-value-streams.html", n: 3, label: "价值流", title: "四条价值流" },
+    { id: "streams", file: "3-value-streams.html", n: 3, label: "价值流", title: "价值流：4 条 → 7 条" },
     { id: "data", file: "4-data-model.html", n: 4, label: "数据", title: "让数据成为主角" },
     { id: "relations", file: "5-relations.html", n: 5, label: "定位", title: "它和 ITIL / DevOps 是什么关系" },
     { id: "quiz", file: "6-quiz.html", n: 6, label: "自测", title: "检查一下：你真的懂了吗" },
@@ -285,7 +285,7 @@
       var msg, sub;
       if (pct >= 90) { msg = "架构师视角已上线 🏆"; sub = "你不只是记住了名词，而是理解了 IT4IT 想解决的问题和它的组织方式。"; }
       else if (pct >= 70) { msg = "入门完成 🎯"; sub = "主线已经掌握。回看错题所在的那一站，把细节补齐就稳了。"; }
-      else if (pct >= 40) { msg = "方向对了，值得再走一遍 🧭"; sub = "建议重看第 2、3 站：三层结构和四条价值流是全部内容的地基。"; }
+      else if (pct >= 40) { msg = "方向对了，值得再走一遍 🧭"; sub = "建议重看第 2、3 站：三层结构和价值流 4→7 是全部内容的地基。"; }
       else { msg = "别急，这很正常 🌱"; sub = "IT4IT 的名词密度确实高。先记住一句话：它就是“IT 自己这条价值链的参考架构”。"; }
 
       var html = '<div class="card score-card">' +
